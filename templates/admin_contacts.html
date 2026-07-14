@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Admin Emergency Contacts</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#eef3fb;
+margin:0;
+}
+
+.container{
+width:95%;
+margin:auto;
+padding:30px;
+}
+
+h1{
+color:#2563eb;
+}
+
+.back{
+display:inline-block;
+padding:10px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+margin-top:20px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.1);
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:15px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+background:#f5f5f5;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="/admin_dashboard" class="back">
+← Back to Dashboard
+</a>
+
+<h1>Emergency Contacts</h1>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Relation</th>
+<th>Phone</th>
+<th>Priority</th>
+<th>Email</th>
+
+</tr>
+
+{% for contact in contacts %}
+
+<tr>
+
+<td>{{ contact.id }}</td>
+
+<td>{{ contact.name }}</td>
+
+<td>{{ contact.relation }}</td>
+
+<td>{{ contact.phone }}</td>
+
+<td>{{ contact.priority }}</td>
+
+<td>{{ contact.email }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>

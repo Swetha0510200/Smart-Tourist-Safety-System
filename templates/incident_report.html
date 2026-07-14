@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Incident Intelligence Dashboard</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#eef3fb;
+color:#1e293b;
+}
+
+.container{
+width:95%;
+max-width:1450px;
+margin:auto;
+padding:30px;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.header h1{
+font-size:34px;
+font-weight:700;
+color:#2563eb;
+}
+
+.back-btn{
+text-decoration:none;
+background:#2563eb;
+color:white;
+padding:12px 22px;
+border-radius:10px;
+font-weight:600;
+transition:.3s;
+}
+
+.back-btn:hover{
+background:#1d4ed8;
+}
+
+.section{
+background:white;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+margin-bottom:30px;
+}
+
+.section h2{
+color:#2563eb;
+margin-bottom:25px;
+font-size:28px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.card{
+background:#f8fafc;
+padding:22px;
+border-radius:15px;
+border:1px solid #e2e8f0;
+}
+
+.card h3{
+font-size:15px;
+font-weight:600;
+color:#64748b;
+margin-bottom:10px;
+}
+
+.big{
+font-size:28px;
+font-weight:bold;
+color:#2563eb;
+}
+
+label{
+display:block;
+margin-bottom:8px;
+font-weight:600;
+color:#475569;
+}
+
+input,
+select,
+textarea{
+
+width:100%;
+
+padding:14px;
+
+font-size:15px;
+
+border:1px solid #d1d5db;
+
+border-radius:10px;
+
+margin-bottom:20px;
+
+transition:.3s;
+
+background:white;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+outline:none;
+
+border-color:#2563eb;
+
+box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+textarea{
+
+resize:none;
+
+min-height:160px;
+
+}
+
+button{
+
+width:100%;
+
+padding:16px;
+
+border:none;
+
+border-radius:12px;
+
+background:#dc2626;
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#b91c1c;
+
+}
+
+.alert-box{
+
+background:#eff6ff;
+
+border-left:5px solid #2563eb;
+
+padding:18px;
+
+border-radius:12px;
+
+margin-bottom:25px;
+
+line-height:28px;
+
+}
+
+.alert-box strong{
+
+color:#2563eb;
+
+}
+
+.footer{
+
+margin-top:40px;
+
+text-align:center;
+
+color:#64748b;
+
+font-size:14px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>🤖 AI Incident Intelligence Dashboard</h1>
+
+<a href="{{ url_for('dashboard') }}" class="back-btn">
+
+← Dashboard
+
+</a>
+
+</div>
+
+<!-- =================================================== -->
+<!-- INCIDENT REPORT FORM -->
+<!-- =================================================== -->
+
+<div class="section">
+
+<h2>📝 Report New Incident</h2>
+
+<div class="alert-box">
+
+<strong>Smart AI Incident Reporting</strong>
+
+<p>
+
+Submit accurate incident information.
+
+The AI engine will analyse your report together with your
+
+current GPS location, travel behaviour, geo-fence status,
+
+time of reporting, and historical safety information.
+
+</p>
+
+</div>
+
+<form method="POST" action="{{ url_for('incident_report') }}">
+
+<div class="grid">
+
+<div>
+
+<label>Incident Type</label>
+
+<select name="incident_type" required>
+
+<option value="">Select Incident</option>
+
+<option value="Accident">🚗 Accident</option>
+
+<option value="Medical Emergency">🏥 Medical Emergency</option>
+
+<option value="Theft">💰 Theft</option>
+
+<option value="Lost Passport">🛂 Lost Passport</option>
+
+<option value="Harassment">⚠ Harassment</option>
+
+<option value="Natural Disaster">🌪 Natural Disaster</option>
+
+<option value="Fire">🔥 Fire</option>
+
+<option value="Missing Person">👤 Missing Person</option>
+
+<option value="Road Block">🚧 Road Block</option>
+
+<option value="Other">📌 Other</option>
+
+</select>
+
+</div>
+
+<div>
+
+<label>Incident Location</label>
+
+<input
+
+type="text"
+
+name="location"
+
+placeholder="Enter exact incident location"
+
+required>
+
+</div>
+
+</div>
+
+<label>Incident Description</label>
+
+<textarea
+
+name="description"
+
+placeholder="Describe the incident in detail. Mention injuries, danger, people involved, weather conditions, suspicious activities or anything that can help emergency responders."
+
+required>
+
+</textarea>
+
+<button type="submit">
+
+🚨 Submit Incident For AI Analysis
+
+</button>
+
+</form>
+
+</div>
+
+<!-- ========================= -->
+<!-- LIVE TOURIST INFORMATION -->
+<!-- ========================= -->
+
+<div class="section">
+
+    <h2>📍 Live Tourist Information</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Tourist Name</h3>
+            <div class="big">{{ tourist_name }}</div>
+        </div>
+
+        <div class="card">
+            <h3>Current Time</h3>
+            <div class="big" id="liveTime"></div>
+        </div>
+
+        <div class="card">
+            <h3>Latitude</h3>
+            <div class="big" id="latitude">Detecting...</div>
+        </div>
+
+        <div class="card">
+            <h3>Longitude</h3>
+            <div class="big" id="longitude">Detecting...</div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- LIVE AI SAFETY ANALYSIS -->
+<!-- ========================= -->
+
+<div class="section">
+
+<h2>🤖 Live AI Safety Analysis</h2>
+
+<div class="grid">
+
+<!-- Overall Risk -->
+
+<div class="card">
+
+<h3>Overall AI Risk</h3>
+
+<div class="big"
+
+{% if analysis.overall_risk=="LOW" %}
+style="color:#16a34a;"
+{% elif analysis.overall_risk=="MEDIUM" %}
+style="color:#d97706;"
+{% elif analysis.overall_risk=="HIGH" %}
+style="color:#dc2626;"
+{% else %}
+style="color:#7f1d1d;"
+{% endif %}
+
+>
+
+{{ analysis.overall_risk }}
+
+</div>
+
+</div>
+
+
+<!-- Safety Score -->
+
+<div class="card">
+
+<h3>Safety Score</h3>
+
+<div class="big">
+
+{{ analysis.safety_score }}%
+
+</div>
+
+</div>
+
+
+<!-- Geo Fence -->
+
+<div class="card">
+
+<h3>Geo Fence Status</h3>
+
+<div class="big">
+
+<span id="geo_status">{{ analysis.geo_fence }}</span>
+
+</div>
+
+</div>
+
+
+<!-- Travel Status -->
+
+<div class="card">
+
+<h3>Travel Status</h3>
+
+<div class="big">
+
+{{ analysis.travel_status }}
+
+</div>
+
+</div>
+
+
+<!-- Night Travel -->
+
+<div class="card">
+
+<h3>Night Travel</h3>
+
+<div class="big">
+
+{{ analysis.night_travel }}
+
+</div>
+
+</div>
+
+
+<!-- Emergency Contacts -->
+
+<div class="card">
+
+<h3>Emergency Contacts</h3>
+
+<div class="big">
+
+{{ analysis.emergency_contacts }}
+
+</div>
+
+</div>
+
+
+<!-- Current Location -->
+
+<div class="card">
+
+<h3>Current GPS Location</h3>
+
+<div style="font-size:18px;font-weight:bold;color:#2563eb;">
+
+<span id="current_location">{{ analysis.current_location }}</span>
+
+</div>
+
+</div>
+
+
+<!-- AI Recommendation -->
+
+<div class="card">
+
+<h3>AI Recommendation</h3>
+
+<div style="font-size:16px;font-weight:bold;color:#2563eb;line-height:30px;">
+
+{{ analysis.recommendation }}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =================================================== -->
+<!-- INCIDENT HISTORY -->
+<!-- =================================================== -->
+
+<div class="section">
+
+<h2>📋 Incident History</h2>
+
+{% if reports %}
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Incident Type</th>
+<th>Location</th>
+<th>Reported Time</th>
+<th>Severity</th>
+<th>AI Score</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for report in reports %}
+
+<tr>
+
+<td>{{ report.incident_type }}</td>
+
+<td>{{ report.location }}</td>
+
+<td>{{ report.report_time }}</td>
+
+<td>
+
+{% if report.severity=="Low" %}
+
+<span style="
+background:#dcfce7;
+color:#15803d;
+padding:6px 15px;
+border-radius:20px;
+font-weight:bold;
+">
+
+{{ report.severity }}
+
+</span>
+
+{% elif report.severity=="Medium" %}
+
+<span style="
+background:#fef3c7;
+color:#b45309;
+padding:6px 15px;
+border-radius:20px;
+font-weight:bold;
+">
+
+{{ report.severity }}
+
+</span>
+
+{% elif report.severity=="High" %}
+
+<span style="
+background:#fee2e2;
+color:#dc2626;
+padding:6px 15px;
+border-radius:20px;
+font-weight:bold;
+">
+
+{{ report.severity }}
+
+</span>
+
+{% else %}
+
+<span style="
+background:#7f1d1d;
+color:white;
+padding:6px 15px;
+border-radius:20px;
+font-weight:bold;
+">
+
+{{ report.severity }}
+
+</span>
+
+{% endif %}
+
+</td>
+
+<td>{{ report.ai_score }}%</td>
+
+</tr>
+
+<tr>
+
+<td colspan="5"
+style="
+background:#f8fafc;
+text-align:left;
+padding:20px;
+line-height:32px;
+">
+
+<b>👤 Tourist :</b>
+
+{{ report.tourist_name }}
+
+<br><br>
+
+<b>📍 Incident Location :</b>
+
+{{ report.location }}
+
+<br><br>
+
+<b>📝 Description :</b>
+
+{{ report.description }}
+
+<br><br>
+
+<b>👮 Police Required :</b>
+
+{{ report.police_required }}
+
+<br><br>
+
+<b>🏥 Medical Required :</b>
+
+{{ report.medical_required }}
+
+<br><br>
+
+<b>⚡ Estimated Response Time :</b>
+
+{{ report.response_time }}
+
+<br><br>
+
+<b>🤖 AI Recommendation :</b>
+
+<span style="color:#2563eb;font-weight:bold;">
+
+{{ report.recommendation }}
+
+</span>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+{% else %}
+
+<div
+style="
+padding:35px;
+background:#f8fafc;
+border-radius:12px;
+text-align:center;
+font-size:18px;
+">
+
+No Incident Reports Available.
+
+</div>
+
+{% endif %}
+
+</div>
+
+<!-- =================================================== -->
+<!-- AI ANALYTICS DASHBOARD -->
+<!-- =================================================== -->
+
+<div class="section">
+
+<h2>📊 AI Analytics Dashboard</h2>
+
+<div class="grid">
+
+<!-- Safety Score -->
+
+<div class="card">
+
+<h3>Current Safety Score</h3>
+
+<canvas id="scoreChart"></canvas>
+
+</div>
+
+<!-- Emergency Readiness -->
+
+<div class="card">
+
+<h3>Emergency Readiness</h3>
+
+<canvas id="contactChart"></canvas>
+
+</div>
+
+<!-- Risk Distribution -->
+
+<div class="card">
+
+<h3>Current Risk Level</h3>
+
+<canvas id="riskChart"></canvas>
+
+</div>
+
+<!-- AI Summary -->
+
+<div class="card">
+
+<h3>AI Live Summary</h3>
+
+<div style="line-height:32px;font-size:16px;">
+
+<p>
+<b>Overall Risk :</b>
+{{ analysis.overall_risk }}
+</p>
+
+<p>
+<b>Safety Score :</b>
+{{ analysis.safety_score }}%
+</p>
+
+<p>
+<b>Geo Fence :</b>
+{{ analysis.geo_fence }}
+</p>
+
+<p>
+<b>Travel Status :</b>
+{{ analysis.travel_status }}
+</p>
+
+<p>
+<b>Night Travel :</b>
+{{ analysis.night_travel }}
+</p>
+
+<p>
+<b>Emergency Contacts :</b>
+<h2>{{ analysis.emergency_contacts }}</h2>
+</p>
+
+<p>
+<b>Current Location :</b>
+{{ analysis.current_location }}
+</p>
+
+<p>
+<b>Response Time :</b>
+{{ analysis.response_time }}
+</p>
+
+<p>
+<b>Police Required :</b>
+{{ analysis.police_required }}
+</p>
+
+<p>
+<b>Medical Required :</b>
+{{ analysis.medical_required }}
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+// ==========================
+// LIVE CLOCK
+// ==========================
+
+function updateClock() {
+    const now = new Date();
+
+    document.getElementById("liveTime").innerHTML =
+        now.toLocaleString("en-IN", {
+            dateStyle: "medium",
+            timeStyle: "medium"
+        });
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+
+
+// ==========================
+// LIVE GPS LOCATION
+// ==========================
+function updateGPS() {
+
+    if (!navigator.geolocation) {
+        document.getElementById("latitude").innerHTML = "Not Supported";
+        document.getElementById("longitude").innerHTML = "Not Supported";
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(function(position) {
+
+        console.log("Live Latitude:", position.coords.latitude);
+        console.log("Live Longitude:", position.coords.longitude);
+
+        const lat = position.coords.latitude.toFixed(6);
+        const lng = position.coords.longitude.toFixed(6);
+
+        // Show live values immediately
+        document.getElementById("latitude").innerHTML = lat;
+        document.getElementById("longitude").innerHTML = lng;
+
+        fetch("/update_location", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: `latitude=${lat}&longitude=${lng}`
+        })
+        .then(response => response.json())
+        .then(data => {
+
+            console.log(data);
+
+            // Update other live values
+            if(document.getElementById("current_location"))
+                document.getElementById("current_location").innerHTML = data.current_location;
+
+            if(document.getElementById("geo_status"))
+                document.getElementById("geo_status").innerHTML = data.geo_status;
+
+        })
+        .catch(err => console.log(err));
+
+    });
+}
+
+updateGPS();
+setInterval(updateGPS, 10000);   // Update every 10 seconds
+
+// ===================================
+// DYNAMIC VALUES FROM FLASK
+// ===================================
+
+const safetyScore = Number("{{ analysis.safety_score }}") || 0;
+
+const emergencyContacts =
+    Number("{{ analysis.emergency_contacts }}") || 0;
+
+const overallRisk =
+"{{ analysis.overall_risk }}";
+
+
+// ===================================
+// CONVERT RISK TO NUMERIC VALUE
+// ===================================
+
+let riskPercentage = 0;
+
+switch(overallRisk){
+
+case "LOW":
+riskPercentage = 25;
+break;
+
+case "MEDIUM":
+riskPercentage = 50;
+break;
+
+case "HIGH":
+riskPercentage = 75;
+break;
+
+case "CRITICAL":
+riskPercentage = 100;
+break;
+
+default:
+riskPercentage = 0;
+
+}
+
+let riskColor="#22c55e";
+
+if(overallRisk==="MEDIUM")
+riskColor="#f59e0b";
+
+if(overallRisk==="HIGH")
+riskColor="#ef4444";
+
+if(overallRisk==="CRITICAL")
+riskColor="#7f1d1d";
+
+
+// ===================================
+// SAFETY SCORE CHART
+// ===================================
+
+new Chart(document.getElementById("scoreChart"),{
+
+type:"doughnut",
+
+data:{
+
+labels:["Safe","Unsafe"],
+
+datasets:[{
+
+data:[
+safetyScore,
+100-safetyScore
+],
+
+backgroundColor:[
+"#22c55e",
+"#ef4444"
+],
+
+borderWidth:0
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+cutout:"70%",
+
+plugins:{
+legend:{
+position:"bottom"
+}
+}
+
+}
+
+});
+
+
+// ===================================
+// EMERGENCY CONTACT CHART
+// ===================================
+
+new Chart(document.getElementById("contactChart"),{
+
+type:"bar",
+
+data:{
+
+labels:["Emergency Contacts"],
+
+datasets:[{
+
+label:"Registered",
+
+data:[emergencyContacts],
+
+backgroundColor:"#2563eb"
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+plugins:{
+legend:{
+display:false
+}
+},
+
+scales:{
+
+y:{
+
+beginAtZero:true,
+
+suggestedMax:5
+
+}
+
+}
+
+}
+
+});
+
+
+// ===================================
+// RISK CHART
+// ===================================
+
+new Chart(document.getElementById("riskChart"),{
+
+type:"pie",
+
+data:{
+
+labels:[
+"Risk",
+"Safe"
+],
+
+datasets:[{
+
+data:[
+riskPercentage,
+100-riskPercentage
+],
+
+backgroundColor:[
+riskColor,
+"#d1d5db"
+],
+
+borderWidth:0
+
+}]
+
+},
+
+options:{
+
+responsive:true,
+
+plugins:{
+legend:{
+position:"bottom"
+}
+}
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>
+

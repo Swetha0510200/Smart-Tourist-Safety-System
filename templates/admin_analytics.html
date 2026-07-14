@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Admin Analytics</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial,Helvetica,sans-serif;
+            background:#eef3fb;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:30px;
+        }
+
+        h1{
+            color:#2563eb;
+        }
+
+        .back{
+            display:inline-block;
+            text-decoration:none;
+            background:#2563eb;
+            color:white;
+            padding:10px 20px;
+            border-radius:8px;
+            margin-bottom:25px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0px 5px 15px rgba(0,0,0,.15);
+        }
+
+        .card h2{
+            color:#2563eb;
+            margin-bottom:15px;
+        }
+
+        .number{
+            font-size:35px;
+            font-weight:bold;
+        }
+
+        .section{
+            margin-top:35px;
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0px 5px 15px rgba(0,0,0,.15);
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        th{
+            background:#2563eb;
+            color:white;
+            padding:15px;
+        }
+
+        td{
+            text-align:center;
+            padding:12px;
+            border-bottom:1px solid #ddd;
+        }
+
+        tr:hover{
+            background:#f5f5f5;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="/admin_dashboard" class="back">
+← Back to Dashboard
+</a>
+
+<h1>Admin Analytics</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Total Tourists</h2>
+<div class="number">{{ total_tourists }}</div>
+</div>
+
+<div class="card">
+<h2>Total Incidents</h2>
+<div class="number">{{ total_incidents }}</div>
+</div>
+
+<div class="card">
+<h2>Emergency Contacts</h2>
+<div class="number">{{ total_contacts }}</div>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>AI Risk Summary</h2>
+
+<table>
+
+<tr>
+<th>Risk Level</th>
+<th>Count</th>
+</tr>
+
+<tr>
+<td>LOW</td>
+<td>{{ low_risk }}</td>
+</tr>
+
+<tr>
+<td>MEDIUM</td>
+<td>{{ medium_risk }}</td>
+</tr>
+
+<tr>
+<td>HIGH</td>
+<td>{{ high_risk }}</td>
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>Incident Severity Summary</h2>
+
+<table>
+
+<tr>
+<th>Severity</th>
+<th>Count</th>
+</tr>
+
+<tr>
+<td>Low</td>
+<td>{{ low_incidents }}</td>
+</tr>
+
+<tr>
+<td>Medium</td>
+<td>{{ medium_incidents }}</td>
+</tr>
+
+<tr>
+<td>High</td>
+<td>{{ high_incidents }}</td>
+</tr>
+
+<tr>
+<td>Critical</td>
+<td>{{ critical_incidents }}</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

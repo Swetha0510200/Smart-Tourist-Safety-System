@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Tourist Safety Dashboard</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial,sans-serif;
+        }
+
+        body{
+            background:#f4f7fc;
+        }
+
+        .sidebar{
+            position:fixed;
+            width:250px;
+            height:100%;
+            background:#1e3c72;
+            color:white;
+            padding:20px;
+        }
+
+        .sidebar h2{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .sidebar ul{
+            list-style:none;
+        }
+
+        .sidebar ul li{
+            padding:15px;
+            margin:10px 0;
+            background:rgba(255,255,255,0.1);
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        .sidebar ul li:hover{
+            background:#2a5298;
+        }
+
+        .main{
+            margin-left:270px;
+            padding:30px;
+        }
+
+        .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            margin-bottom:30px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:25px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            text-align:center;
+        }
+
+        .card h3{
+            color:#1e3c72;
+        }
+
+        .card p{
+            font-size:22px;
+            margin-top:10px;
+            font-weight:bold;
+        }
+
+        .section{
+            background:white;
+            margin-top:25px;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .safe{
+            color:green;
+            font-weight:bold;
+        }
+
+        .sos-btn{
+            width:100%;
+            padding:15px;
+            border:none;
+            background:red;
+            color:white;
+            font-size:20px;
+            border-radius:10px;
+            cursor:pointer;
+            margin-top:15px;
+        }
+
+        .sos-btn:hover{
+            background:darkred;
+        }
+
+        #map{
+            width:100%;
+            height:450px;
+            border-radius:15px;
+            margin-top:15px;
+            border:2px solid #ddd;
+        }
+
+        .location-box{
+            margin-top:10px;
+            font-size:16px;
+            color:#1e3c72;
+            font-weight:bold;
+        }
+
+        .dark-mode{
+            background:#0f172a;
+            color:white;
+        }
+
+        .dark-mode .sidebar{
+            background:#111827;
+        }
+
+        .dark-mode .card{
+            background:#1e293b;
+            color:white;
+            box-shadow:0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        .dark-mode .section{
+            background:#1e293b;
+            color:white;
+        }
+
+        .dark-mode .card h3{
+            color:#60a5fa;
+        }
+
+        .dark-mode .location-box{
+            color:#93c5fd;
+        }
+
+        .dark-mode .safe{
+            color:#22c55e;
+        }
+
+        .dark-mode .sidebar ul li{
+            background:#334155;
+        }
+
+        .dark-mode .sidebar ul li:hover{
+            background:#475569;
+        }
+
+       .dark-mode h1,
+       .dark-mode h2{
+            color:white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>🛡 Tourist Safety</h2>
+
+    <ul>
+        <li>
+        <a href="/dashboard"
+        style="color:white;text-decoration:none;display:block;">
+        🏠 Dashboard
+        </a>
+        </li>
+
+        <li>
+        <a href="#liveTracking"
+        style="color:white;text-decoration:none;display:block;">
+        📍 Live Tracking
+        </a>
+        </li>
+
+        <li>
+        <a href="/digital_id"
+        style="color:white;text-decoration:none;">
+        🆔 Digital ID
+        </a>
+        </li>
+
+        <li>
+            <a href="/incident_report"
+            style="color:white;text-decoration:none;">
+            ⚠ Incident Report
+            </a>
+        </li>
+        
+        <li>
+            <a href="/nearby"
+            style="color:white;text-decoration:none;">
+            📍 Nearby Services
+            </a>
+        </li>
+        <li>
+            <a href="/ai_risk"
+                style="color:white;text-decoration:none;">
+                🤖 AI Risk Analysis
+            </a>
+        </li>
+        <li>
+            <a href="/sos"
+            style="color:white;text-decoration:none;">
+            🚨 SOS Alerts
+    </a>
+        </li>
+        <li>
+            <a href="/emergency_contacts"
+                style="color:white;text-decoration:none;">
+                📞 Emergency Contacts
+            </a>
+        </li>
+
+        <li>
+
+            <a href="{{ url_for('admin') }}"
+
+            style="color:white;text-decoration:none;display:block;">
+
+            👨‍💼 Admin Dashboard
+
+            </a>
+
+        </li>
+
+        <li>
+        <a href="/logout"
+        style="color:white;text-decoration:none;display:block;">
+        🚪 Logout
+        </a>
+</li>
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <div class="header">
+
+    <h1>Welcome {{ username }}</h1>
+
+    <div>
+
+        <button onclick="toggleDarkMode()"
+        style="
+        padding:10px 20px;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+        margin-right:15px;
+        background-color:rgb(231, 19, 132);
+        ">
+        🌙 Dark Mode
+        </button>
+
+        <h3 style="display:inline;">
+            Status:
+            <span class="safe">{{ geo_status }}</span>
+        </h3>
+
+    </div>
+
+</div>
+
+
+    <div class="cards">
+
+    <div class="card">
+        <h3>Current Location</h3>
+        <p id="currentLocation">
+            {{ current_location }}
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Geo Fence Status</h3>
+        <p id="zoneStatus">
+            {{ geo_status }}
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Risk Level</h3>
+        <p id="riskLevel">
+            {{ risk }}
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Emergency Contacts</h3>
+        <p id="contactCount">
+            {{ contact_count }}
+        </p>
+    </div>
+
+</div>
+    
+    <div class="section">
+
+        <h2>📍 Live Tracking</h2>
+
+        <p>
+            Your live location is shown below.
+        </p>
+
+        <div id="map"></div>
+
+        <div class="location-box" id="locationInfo">
+            Fetching location...
+        </div>
+
+    </div>
+
+    <div class="section">
+
+    <h2>🛡️Travel Safety Tips</h2>
+
+    <ul style="margin-top:15px;line-height:35px;font-size:18px;">
+
+    <li>✔ Keep your Digital ID updated.</li>
+
+    <li>✔ Share your trip with emergency contacts.</li>
+
+    <li>✔ Avoid isolated places after dark.</li>
+
+    <li>✔ Keep emergency numbers accessible.</li>
+
+    <li>✔ Enable Live Location while travelling.</li>
+
+</ul>
+
+</div>
+</div>
+
+<script>
+
+function initMap() {
+
+    if (!navigator.geolocation) {
+        alert("Geolocation is not supported.");
+        return;
+    }
+
+    navigator.geolocation.getCurrentPosition(function(position){
+
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+
+        const userLocation = {
+            lat: latitude,
+            lng: longitude
+        };
+
+        // ---------------- Google Map ----------------
+
+        const map = new google.maps.Map(document.getElementById("map"),{
+            zoom:16,
+            center:userLocation
+        });
+
+        new google.maps.Marker({
+            position:userLocation,
+            map:map,
+            title:"Current Location"
+        });
+
+        new google.maps.Circle({
+            strokeColor:"#00ff00",
+            strokeOpacity:0.8,
+            strokeWeight:2,
+            fillColor:"#00ff00",
+            fillOpacity:0.20,
+            map:map,
+            center:userLocation,
+            radius:500
+        });
+
+        // ---------------- Show Coordinates ----------------
+
+        document.getElementById("currentLocation").innerHTML =
+        latitude.toFixed(6) + ", " + longitude.toFixed(6);
+
+        document.getElementById("locationInfo").innerHTML =
+        "<b>Latitude :</b> " + latitude.toFixed(6) +
+        "<br><b>Longitude :</b> " + longitude.toFixed(6);
+
+        // ---------------- Send Location to Flask ----------------
+
+        fetch("/update_location",{
+
+            method:"POST",
+
+            headers:{
+                "Content-Type":"application/x-www-form-urlencoded"
+            },
+
+            body:
+            "latitude=" + latitude +
+            "&longitude=" + longitude
+
+        })
+
+        .then(response=>response.json())
+
+        .then(data => {
+
+            document.getElementById("currentLocation").innerHTML =
+                data.current_location;
+
+            document.getElementById("zoneStatus").innerHTML =
+                data.geo_status;
+
+            document.getElementById("riskLevel").innerHTML =
+                data.risk;
+
+            document.getElementById("contactCount").innerHTML =
+                data.contact_count;
+
+            document.getElementById("statusText").innerHTML =
+                data.status;
+
+        })
+
+        .catch(error=>{
+
+            console.log(error);
+
+        });
+
+    },
+
+    function(error){
+
+        alert("Unable to fetch current location.");
+
+    });
+
+}
+
+    
+function sendSOS(){
+
+const now = new Date();
+
+document.getElementById("sosResult").innerHTML =
+
+"<br><b>🚨 SOS ALERT SENT</b><br><br>" +
+
+"📞 Contact 1 : {{ contact1 }} <br>" +
+
+"📞 Contact 2 : {{ contact2 }} <br>" +
+
+"📞 Contact 3 : {{ contact3 }} <br><br>" +
+
+"📍 Latitude : " +
+navigator.geolocation.getCurrentPosition(function(pos){
+
+}) +
+
+"<br>⏰ Time : " +
+now.toLocaleString();
+
+alert("SOS Alert Sent Successfully");
+
+}
+
+function toggleDarkMode(){
+
+    document.body.classList.toggle("dark-mode");
+
+}
+
+</script>
+
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxz1LB1ikGjbdPwITdAxeDKrgaMlqrkog&callback=initMap">
+</script>
+
+</body>
+</html>

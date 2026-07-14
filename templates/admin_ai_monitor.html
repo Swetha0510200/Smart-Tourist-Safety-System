@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Monitoring</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#eef3fb;
+margin:0;
+}
+
+.container{
+width:95%;
+margin:auto;
+padding:30px;
+}
+
+.back{
+display:inline-block;
+padding:10px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+h1{
+color:#2563eb;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+margin-top:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:15px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+background:#f7f7f7;
+}
+
+.low{
+color:green;
+font-weight:bold;
+}
+
+.medium{
+color:orange;
+font-weight:bold;
+}
+
+.high{
+color:red;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="/admin_dashboard" class="back">
+← Back to Dashboard
+</a>
+
+<h1>AI Risk Monitoring</h1>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+
+<th>Safety Score</th>
+
+<th>Risk Level</th>
+
+<th>Geo Status</th>
+
+<th>Travel Status</th>
+
+</tr>
+
+{% for tourist in tourists %}
+
+<tr>
+
+<td>{{ tourist.fullname }}</td>
+
+<td>{{ tourist.safety_score }}</td>
+
+<td>
+
+{% if tourist.risk_level=="LOW" %}
+
+<span class="low">
+LOW
+</span>
+
+{% elif tourist.risk_level=="MEDIUM" %}
+
+<span class="medium">
+MEDIUM
+</span>
+
+{% else %}
+
+<span class="high">
+HIGH
+</span>
+
+{% endif %}
+
+</td>
+
+<td>{{ tourist.geo_status }}</td>
+
+<td>{{ tourist.travel_status }}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+
+</html>

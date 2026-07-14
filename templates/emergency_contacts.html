@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Emergency Contacts</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#1e3c72,#2a5298);
+    min-height:100vh;
+    padding:30px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+.heading{
+    text-align:center;
+    color:white;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+input,select{
+    width:100%;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.add-btn{
+    width:100%;
+    margin-top:20px;
+    padding:15px;
+    background:#1e3c72;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.add-btn:hover{
+    background:#2a5298;
+}
+
+table{
+    width:100%;
+    margin-top:30px;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+th{
+    background:#1e3c72;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#28a745;
+    color:white;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:10px;
+}
+
+.back-btn:hover{
+    background:#218838;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="heading">
+    <h1>📞 Emergency Contact Management</h1>
+    <p>Add trusted people who will receive SOS alerts</p>
+</div>
+
+<div class="card">
+
+<form action="/add_contact" method="POST">
+<input type="hidden" name="id" id="contact_id">
+
+<div class="form-grid">
+
+<div>
+<label>Contact Name</label>
+<input type="text"
+id="name"
+name="name"
+placeholder="Enter Contact Name"
+required>
+</div>
+
+<div>
+<label>Mobile Number</label>
+<input type="text"
+id="phone"
+name="phone"
+placeholder="Enter Mobile Number"
+required>
+</div>
+
+<div>
+<label>Relationship</label>
+<select id="relation" name="relation" required>
+<option value="">Select Relationship</option>
+<option>Father</option>
+<option>Mother</option>
+<option>Brother</option>
+<option>Sister</option>
+<option>Spouse</option>
+<option>Friend</option>
+<option>Guardian</option>
+<option>Other</option>
+</select>
+</div>
+
+<div>
+<label>Priority Contact</label>
+<select id="priority" name="priority" required>
+<option value="">Select Priority</option>
+<option>Primary</option>
+<option>Secondary</option>
+</select>
+</div>
+
+<div>
+<label>Email Address</label>
+<input type="email"
+id="email"
+name="email"
+placeholder="Enter Email Address">
+</div>
+
+</div>
+
+<button class="add-btn" type="submit">
+➕ Add Emergency Contact
+</button>
+
+</form>
+
+</div>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Mobile</th>
+<th>Relationship</th>
+<th>Priority</th>
+<th>Email</th>
+<th>Actions</th>
+
+</tr>
+
+{% for contact in contacts %}
+
+<tr>
+    <td>{{ contact.name }}</td>
+    <td>{{ contact.phone }}</td>
+    <td>{{ contact.relation }}</td>
+    <td>{{ contact.priority }}</td>
+    <td>{{ contact.email }}</td>
+
+    <td style="display:flex;
+           justify-content:center;
+           align-items:center;
+           gap:15px;">
+
+    <span>👤 {{ contact.name }}</span>
+
+    <a href="#"
+    onclick="
+    document.getElementById('name').value='{{ contact.name }}';
+    document.getElementById('phone').value='{{ contact.phone }}';
+    document.getElementById('relation').value='{{ contact.relation }}';
+    document.getElementById('priority').value='{{ contact.priority }}';
+    document.getElementById('email').value='{{ contact.email }}';
+    return false;">
+   ✏️
+   </a>
+
+    <a href="/delete_contact/{{ contact.id }}"
+       style="text-decoration:none;font-size:20px;">
+       🗑️
+    </a>
+
+</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<a href="/dashboard" class="back-btn">
+⬅ Back To Dashboard
+</a>
+
+</div>
+
+</body>
+</html>

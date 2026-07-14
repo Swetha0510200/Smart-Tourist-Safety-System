@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Login</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+
+}
+
+.login-box{
+
+width:420px;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+text-align:center;
+
+}
+
+.login-box h2{
+
+color:#1e3c72;
+
+margin-bottom:25px;
+
+}
+
+.input-box{
+
+margin-bottom:20px;
+
+text-align:left;
+
+}
+
+.input-box label{
+
+display:block;
+
+margin-bottom:8px;
+
+font-weight:bold;
+
+color:#333;
+
+}
+
+.input-box input{
+
+width:100%;
+
+padding:12px;
+
+border:1px solid #ccc;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+button{
+
+width:100%;
+
+padding:14px;
+
+background:#1e3c72;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#2563eb;
+
+}
+
+.error{
+
+margin-top:15px;
+
+color:red;
+
+font-weight:bold;
+
+}
+
+.back{
+
+display:block;
+
+margin-top:20px;
+
+text-decoration:none;
+
+color:#1e3c72;
+
+font-weight:bold;
+
+}
+
+.back:hover{
+
+color:#2563eb;
+
+}
+
+.icon{
+
+font-size:60px;
+
+color:#1e3c72;
+
+margin-bottom:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<div class="icon">
+<i class="fa-solid fa-user-shield"></i>
+</div>
+
+<h2>Administrator Login</h2>
+
+<form action="/admin_login" method="POST">
+
+<div class="input-box">
+
+<label>Username</label>
+
+<input
+type="text"
+name="username"
+placeholder="Enter Username"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Password</label>
+
+<input
+type="password"
+name="password"
+placeholder="Enter Password"
+required>
+
+</div>
+
+<button type="submit">
+
+<i class="fa-solid fa-right-to-bracket"></i>
+
+Login
+
+</button>
+
+</form>
+
+{% if error %}
+
+<p class="error">
+
+{{ error }}
+
+</p>
+
+{% endif %}
+
+<a href="/" class="back">
+
+← Back to Tourist Login
+
+</a>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Nearby Emergency Services</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f7fc;
+margin:0;
+}
+
+.container{
+
+width:90%;
+margin:auto;
+padding:30px;
+
+}
+
+h1{
+
+text-align:center;
+color:#1e3c72;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+margin-top:30px;
+
+}
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.card h2{
+
+color:#1e3c72;
+
+}
+
+.card button{
+
+margin-top:20px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+.card button:hover{
+
+background:#1d4ed8;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📍 Nearby Emergency Services</h1>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>🚓 Police Station</h2>
+
+<p>Locate nearby police stations.</p>
+
+<button onclick="searchPlace('police station')">
+
+Open Map
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🏥 Hospital</h2>
+
+<p>Locate nearby hospitals.</p>
+
+<button onclick="searchPlace('hospital')">
+
+Open Map
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🏨 Tourist Help Center</h2>
+
+<p>Find tourist information centers.</p>
+
+<button onclick="searchPlace('tourist information center')">
+
+Open Map
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🚖 Taxi Service</h2>
+
+<p>Find nearby taxi services.</p>
+
+<button onclick="searchPlace('taxi')">
+
+Open Map
+
+</button>
+
+</div>
+
+</div>
+
+<br>
+
+<div style="text-align:center;">
+
+<a href="/dashboard"
+style="
+background:#22c55e;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:10px;">
+
+⬅ Back to Dashboard
+
+</a>
+
+</div>
+
+</div>
+
+<script>
+
+function searchPlace(place){
+
+navigator.geolocation.getCurrentPosition(function(position){
+
+let lat=position.coords.latitude;
+let lng=position.coords.longitude;
+
+window.open(
+"https://www.google.com/maps/search/"+place+"/@"+lat+","+lng+",15z"
+);
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>

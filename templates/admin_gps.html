@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>GPS Monitoring</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#eef3fb;
+margin:0;
+}
+
+.container{
+width:95%;
+margin:auto;
+padding:30px;
+}
+
+h1{
+color:#2563eb;
+}
+
+.back{
+display:inline-block;
+padding:10px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin-bottom:20px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+margin-top:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:15px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+background:#f8f8f8;
+}
+
+.safe{
+color:green;
+font-weight:bold;
+}
+
+.danger{
+color:red;
+font-weight:bold;
+}
+
+.unknown{
+color:gray;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<a href="/admin_dashboard" class="back">
+← Back to Dashboard
+</a>
+
+<h1>GPS Monitoring</h1>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+<th>Email</th>
+<th>Latitude</th>
+<th>Longitude</th>
+<th>GPS Status</th>
+
+</tr>
+
+{% for tourist in tourists %}
+
+<tr>
+
+<td>{{ tourist.fullname }}</td>
+
+<td>{{ tourist.email }}</td>
+
+<td>
+{{ tourist.latitude if tourist.latitude else "Not Available" }}
+</td>
+
+<td>
+{{ tourist.longitude if tourist.longitude else "Not Available" }}
+</td>
+
+<td>
+
+{% if tourist.latitude %}
+
+    {% if tourist.latitude > 13 %}
+
+        <span class="danger">
+        Outside Safe Zone
+        </span>
+
+    {% else %}
+
+        <span class="safe">
+        Inside Safe Zone
+        </span>
+
+    {% endif %}
+
+{% else %}
+
+<span class="unknown">
+Location Unknown
+</span>
+
+{% endif %}
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+
+</html>

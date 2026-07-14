@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Safety Intelligence Center</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',Arial,sans-serif;
+}
+
+body{
+
+background:#f5f7fb;
+color:#1f2937;
+
+}
+
+.container{
+
+width:95%;
+max-width:1400px;
+margin:auto;
+padding:30px;
+
+}
+
+.header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+
+}
+
+.header h1{
+
+font-size:34px;
+color:#2563eb;
+
+}
+
+.back{
+
+background:#2563eb;
+color:white;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+.back:hover{
+
+background:#1d4ed8;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+
+}
+
+.card{
+
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+}
+
+.card i{
+
+font-size:30px;
+margin-bottom:15px;
+color:#2563eb;
+
+}
+
+.card h3{
+
+font-size:16px;
+color:#6b7280;
+margin-bottom:10px;
+
+}
+
+.big{
+
+font-size:32px;
+font-weight:bold;
+
+}
+
+.low{
+
+color:#16a34a;
+
+}
+
+.medium{
+
+color:#d97706;
+
+}
+
+.high{
+
+color:#dc2626;
+
+}
+
+.section{
+
+margin-top:30px;
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.section h2{
+
+color:#2563eb;
+margin-bottom:20px;
+
+}
+
+.grid2{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:25px;
+
+}
+
+.scoreBox{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.circle{
+
+width:180px;
+height:180px;
+border-radius:50%;
+border:12px solid #22c55e;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:38px;
+font-weight:bold;
+color:#16a34a;
+
+}
+
+.infoCard{
+
+background:#f8fafc;
+padding:20px;
+border-radius:15px;
+margin-bottom:15px;
+
+}
+
+.infoCard h4{
+
+margin-bottom:8px;
+color:#374151;
+
+}
+
+.status{
+
+font-size:18px;
+font-weight:bold;
+
+}
+
+.safe{
+
+color:#16a34a;
+
+}
+
+.warning{
+
+color:#d97706;
+
+}
+
+.danger{
+
+color:#dc2626;
+
+}
+
+.table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+.table th{
+
+background:#2563eb;
+color:white;
+padding:14px;
+
+}
+
+.table td{
+
+padding:14px;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+.badge{
+
+padding:6px 15px;
+border-radius:20px;
+font-weight:bold;
+
+}
+
+.green{
+
+background:#dcfce7;
+color:#15803d;
+
+}
+
+.orange{
+
+background:#fef3c7;
+color:#b45309;
+
+}
+
+.red{
+
+background:#fee2e2;
+color:#dc2626;
+
+}
+
+.timeline{
+
+margin-top:15px;
+
+}
+
+.timeline-item{
+
+display:flex;
+gap:15px;
+margin-bottom:18px;
+
+}
+
+.dot{
+
+width:15px;
+height:15px;
+border-radius:50%;
+background:#2563eb;
+margin-top:5px;
+
+}
+
+.recommendation{
+
+background:#eff6ff;
+border-left:5px solid #2563eb;
+padding:18px;
+border-radius:10px;
+
+}
+
+.recommendation ul{
+
+margin-left:25px;
+margin-top:10px;
+
+}
+
+.footer{
+
+margin-top:30px;
+text-align:center;
+color:#6b7280;
+
+}
+
+@media(max-width:900px){
+
+.grid2{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>
+<i class="fa-solid fa-shield-halved"></i>
+AI Safety Intelligence Center
+</h1>
+
+<a href="/dashboard" class="back">
+
+← Dashboard
+
+</a>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h3>Risk Level</h3>
+
+<div class="big
+{% if risk=='LOW' %}
+low
+{% elif risk=='MEDIUM' %}
+medium
+{% else %}
+high
+{% endif %}
+">
+
+{{ risk }}
+
+</div>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h3>Safety Score</h3>
+
+<div class="big">
+
+{{ score }}%
+
+</div>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>Current Location</h3>
+
+<div class="status safe">
+
+{{ location_name }}
+
+</div>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>Emergency Contacts</h3>
+
+<div class="big">
+
+{{ contact_count }}
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>
+
+AI Safety Overview
+
+</h2>
+
+<div class="grid2">
+
+<div class="scoreBox">
+
+<div class="circle">
+
+{{ score }}%
+
+</div>
+
+</div>
+
+<div>
+
+<div class="infoCard">
+
+<h4>Geo Fence</h4>
+
+<div class="status">
+
+{{ geo_status }}
+
+</div>
+
+</div>
+
+<div class="infoCard">
+
+<h4>Travel Status</h4>
+
+<div class="status">
+
+{{ travel_status }}
+
+</div>
+
+</div>
+
+<div class="infoCard">
+
+<h4>Night Risk</h4>
+
+<div class="status">
+
+{{ night_status }}
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ========================================================= -->
+<!-- AI RISK ANALYSIS (REAL-TIME) -->
+<!-- ========================================================= -->
+
+<div class="section">
+
+<h2>
+<i class="fa-solid fa-microchip"></i>
+AI Risk Analysis
+</h2>
+
+<table class="table">
+
+<tr>
+<th>Risk Parameter</th>
+<th>Live Data</th>
+<th>AI Analysis</th>
+</tr>
+
+<tr>
+<td>Current Location</td>
+<td>{{ location_name }}</td>
+
+
+<td>
+
+{% if overall_risk=="LOW" %}
+<span class="badge green">Safe Tourist Area</span>
+
+{% elif overall_risk=="MEDIUM" %}
+<span class="badge orange">Stay Alert</span>
+
+{% elif overall_risk=="HIGH" %}
+<span class="badge red">High Risk Area</span>
+
+{% else %}
+<span class="badge red">Critical Zone</span>
+{% endif %}
+
+</td>
+</tr>
+
+<tr>
+<td>Latitude</td>
+<td>{{ latitude }}</td>
+<td>Live GPS Tracking</td>
+</tr>
+
+<tr>
+<td>Longitude</td>
+<td>{{ longitude }}</td>
+<td>Live GPS Tracking</td>
+</tr>
+
+<tr>
+<td>Geo Fence Status</td>
+<td>{{ geo_status }}</td>
+
+
+<td>
+{% if "Inside" in geo_status %}
+<span class="badge green">Protected</span>
+{% else %}
+<span class="badge red">Outside Safe Zone</span>
+{% endif %}
+</td>
+
+</tr>
+
+<tr>
+
+<td>Travel Status</td>
+
+<td>{{ travel_status }}</td>
+
+<td>
+
+{% if travel_status=="Stationary" %}
+<span class="badge green">Normal</span>
+
+{% elif travel_status=="Travelling" %}
+<span class="badge orange">Monitoring</span>
+
+{% else %}
+<span class="badge red">Abnormal Movement</span>
+
+{% endif %}
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Night Travel</td>
+
+<td>{{ night_status }}</td>
+<td>
+{% if night_status=="High" %}
+<span class="badge red">Night Travel</span>
+{% else %}
+<span class="badge green">Day Travel</span>
+{% endif %}
+</td>
+
+</tr>
+
+<tr>
+
+<td>Emergency Contacts</td>
+
+<td>{{ contact_count }}</td>
+
+<td>
+
+{% if emergency_contacts>=3 %}
+<span class="badge green">Well Protected</span>
+
+{% elif emergency_contacts>=1 %}
+<span class="badge orange">Limited Support</span>
+
+{% else %}
+<span class="badge red">No Emergency Contacts</span>
+
+{% endif %}
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Safety Score</td>
+
+<td>{{ score }}%</td>
+
+<td>
+
+{% if safety_score>=80 %}
+<span class="badge green">Excellent</span>
+
+{% elif safety_score>=60 %}
+<span class="badge orange">Moderate</span>
+
+{% else %}
+<span class="badge red">Unsafe</span>
+
+{% endif %}
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Overall AI Risk</td>
+
+<td>{{ risk }}</td>
+
+<td>
+{% if "LOW" in risk %}
+<span class="badge green">Safe Tourist Area</span>
+
+{% elif "MEDIUM" in risk %}
+<span class="badge orange">Stay Alert</span>
+
+{% else %}
+<span class="badge red">High Risk Area</span>
+
+{% endif %}
+</td>
+
+</tr>
+
+<tr>
+
+<td>Estimated Response Time</td>
+
+<td>{{ response_time }}</td>
+
+<td>Calculated using nearest emergency services</td>
+
+</tr>
+
+<tr>
+
+<td>Police Assistance</td>
+
+<td>{{ police_required }}</td>
+
+<td>
+{% if police_required=="Required" %}
+<span class="badge red">Police Needed</span>
+{% else %}
+<span class="badge green">No Police Needed</span>
+{% endif %}
+</td>
+
+</tr>
+
+<tr>
+
+<td>Medical Assistance</td>
+
+<td>{{ medical_required }}</td>
+
+<td>
+{% if medical_required=="Required" %}
+<span class="badge red">Medical Needed</span>
+{% else %}
+<span class="badge green">No Medical Needed</span>
+{% endif %}
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>
+
+<i class="fa-solid fa-brain"></i>
+
+AI Recommendation Engine
+
+</h2>
+
+<div class="recommendation">
+
+<ul>
+
+{% for item in recommendation %}
+
+<li>{{ item }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>
+
+<i class="fa-solid fa-chart-simple"></i>
+
+AI Monitoring Summary
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-location-crosshairs"></i>
+
+<h3>GPS Tracking</h3>
+
+<p class="safe">
+
+{{ gps_status }}
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-satellite"></i>
+
+<h3>Geo Monitoring</h3>
+
+<p>
+
+{{ geo_status }}
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user-shield"></i>
+
+<h3>Safety Prediction</h3>
+
+<p>
+
+{{ risk }}
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-heart-pulse"></i>
+
+<h3>Emergency Readiness</h3>
+
+<p>
+
+{{ contact_count }}
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+Recent AI Alerts
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="dot"></div>
+
+<div>
+
+<h4>Recent Alert: {{ recent_alert }}</h4>
+
+<p>{{ ai_reason }}</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="dot"></div>
+
+<div>
+
+<h4>{{ geo_alert }}</h4>
+
+<p>{{ geo_alert_description }}</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="dot"></div>
+
+<div>
+
+<h4>{{ ai_update }}</h4>
+
+<p>Latest safety score : {{ score }}%</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+    <p>
+        <i class="fa-solid fa-shield-heart"></i>
+        Smart Tourist Safety System • AI Risk Analysis Dashboard
+    </p>
+
+    <p style="margin-top:8px;">
+        Last Updated :
+        <span id="updateTime"></span>
+    </p>
+
+</div>
+
+<script>
+
+document.getElementById("updateTime").innerHTML =
+new Date().toLocaleString();
+
+function updateLocation(){
+
+    if(navigator.geolocation){
+
+        navigator.geolocation.getCurrentPosition(
+
+            function(position){
+
+                fetch("/update_location",{
+
+                    method:"POST",
+
+                    headers:{
+                        "Content-Type":"application/x-www-form-urlencoded"
+                    },
+
+                    body:
+                    "latitude="+position.coords.latitude+
+                    "&longitude="+position.coords.longitude
+
+                })
+
+                .then(response=>response.json())
+
+                .then(data=>{
+
+                    console.log("Location Updated");
+
+                });
+
+            },
+
+            function(error){
+
+                console.log("Location Permission Denied");
+
+            }
+
+        );
+
+    }
+
+}
+
+updateLocation();
+
+/* Refresh AI analysis every 60 seconds */
+setInterval(function(){
+
+    updateLocation();
+
+    location.reload();
+
+},60000);
+
+</script>
+
+</body>
+</html>

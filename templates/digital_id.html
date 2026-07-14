@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Tourist Digital ID</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0f172a,#1e3a8a);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .card{
+            width:800px;
+            background:white;
+            border-radius:25px;
+            overflow:hidden;
+            box-shadow:0 15px 40px rgba(0,0,0,0.25);
+        }
+
+        .header{
+            background:linear-gradient(135deg,#1e3c72,#2a5298);
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        .header h1{
+            font-size:32px;
+        }
+
+        .content{
+            display:flex;
+            justify-content:space-between;
+            padding:35px;
+        }
+
+        .left{
+            width:60%;
+        }
+
+        .right{
+            width:35%;
+            text-align:center;
+        }
+
+        .profile{
+            width:140px;
+            height:140px;
+            border-radius:50%;
+            background:#dbeafe;
+            margin:auto;
+            margin-bottom:20px;
+            border:4px solid #2563eb;
+        }
+
+        .info{
+            margin-top:15px;
+        }
+
+        .info p{
+            font-size:20px;
+            margin-bottom:12px;
+        }
+
+        .label{
+            font-weight:bold;
+            color:#1e3c72;
+        }
+
+        .badge{
+            display:inline-block;
+            padding:8px 15px;
+            border-radius:20px;
+            color:white;
+            font-size:14px;
+            margin-top:10px;
+        }
+
+        .safe{
+            background:#22c55e;
+        }
+
+        .risk{
+            background:#16a34a;
+        }
+
+        .tourist-id{
+            background:#eff6ff;
+            padding:12px;
+            border-radius:10px;
+            margin-top:15px;
+            font-weight:bold;
+            color:#1e3c72;
+        }
+
+        .qr{
+            margin-top:15px;
+        }
+
+        .qr img{
+            width:180px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#2563eb;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+        }
+
+        .btn:hover{
+            background:#1d4ed8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="header">
+        <h1>🛡 Smart Tourist Digital ID</h1>
+        <p>AI Powered Tourist Safety Monitoring System</p>
+    </div>
+
+    <div class="content">
+
+        <div class="left">
+
+            <div class="info">
+                <p><span class="label">👤 Name:</span> {{ tourist.fullname }}</p>
+
+                <p><span class="label">📧 Email:</span> {{ tourist.email }}</p>
+
+                <p><span class="label">📱 Phone:</span> {{ tourist.phone }}</p>
+
+                <p><span class="label">📞 Emergency Contact:</span>
+                 {{ tourist.emergency_contact1 }}</p>
+
+                <p><span class="label">🎂 DOB:</span>
+                {{ tourist.dob }}</p>
+
+                <p><span class="label">⚧ Gender:</span>
+                {{ tourist.gender }}</p>
+
+                <p><span class="label">🌍 Nationality:</span>
+                {{ tourist.nationality }}</p>
+
+                <p><span class="label">🩸 Blood Group:</span>
+                {{ tourist.blood_group }}</p>
+
+                <p><span class="label">🏠 Address:</span>
+                {{ tourist.address }}</p>
+                
+                <div class="tourist-id">
+                    Tourist ID : STS-2026-{{ tourist.id }}
+                </div>
+
+                <br>
+
+                <span class="badge safe">
+                    ✅ Geo Fence Active
+                </span>
+
+                <span class="badge risk">
+                    🟢 Low Risk
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="right">
+
+           <div class="profile">
+
+            {% if tourist.photo %}
+
+            <img src="{{ url_for('static',
+            filename='uploads/' + tourist.photo) }}"
+            style="
+            width:140px;
+            height:140px;
+            border-radius:50%;
+            object-fit:cover;">
+
+           {% endif %}
+
+        </div>
+
+            <div class="qr">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data={{ tourist.email }}">
+            </div>
+
+            <p><b>QR Verification Code</b></p>
+
+        </div>
+
+    </div>
+
+    <div style="text-align:center;padding-bottom:25px;">
+
+        <a href="/dashboard" class="btn">
+            ← Back to Dashboard
+        </a>
+
+    </div>
+
+    <div style="text-align:center;padding-bottom:25px;">
+
+    <a href="/edit_profile"
+       style="
+       background:#22c55e;
+       color:white;
+       padding:12px 30px;
+       border-radius:10px;
+       text-decoration:none;
+       font-size:18px;
+       font-weight:bold;">
+       ✏ Edit Profile
+    </a>
+
+</div>
+</div>
+
+</body>
+</html>
