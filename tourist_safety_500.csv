@@ -1,0 +1,501 @@
+District,Location Name,Latitude,Longitude,Crime Rate,Crowd Density,Street Lighting,Police Distance(km),Hospital Distance(km),Weather,Road Condition,Night Travel,Previous Incidents,Geo Fence,Response Time(min),Risk Level,Safety Score
+Chennai,Marina Beach,13.05,80.2824,High,High,Good,1.3,4.7,Clear,Poor,No,2,Outside,20,Unsafe,23
+Chennai,Elliot Beach,13.0003,80.2667,Low,Medium,Poor,2.7,2.8,Cloudy,Average,Yes,2,Outside,19,Unsafe,31
+Chennai,Fort St George,13.0827,80.287,Medium,Low,Poor,2.9,4.8,Rain,Good,No,5,Outside,8,Unsafe,19
+Chennai,Kapaleeshwar Temple,13.0339,80.269,Medium,Low,Poor,1.2,1.2,Clear,Poor,No,6,Safe,3,Unsafe,55
+Chennai,Government Museum,13.0722,80.264,High,Low,Average,6.6,7.4,Cloudy,Average,Yes,2,Outside,20,Unsafe,0
+Chennai,VGP Golden Beach,12.9124,80.2517,High,Medium,Poor,3.6,3.1,Rain,Average,No,6,Safe,11,Unsafe,12
+Chennai,Guindy National Park,13.0108,80.2295,Medium,Low,Poor,1.3,9.9,Fog,Average,Yes,4,Outside,10,Unsafe,9
+Chennai,Anna Nagar Tower Park,13.085,80.2101,High,Low,Average,7.4,0.6,Clear,Poor,No,6,Outside,19,Unsafe,5
+Coimbatore,VOC Park,11.0032,76.9725,High,High,Poor,6.1,5.9,Fog,Poor,Yes,1,Safe,5,Unsafe,0
+Coimbatore,Marudhamalai Temple,11.0453,76.862,Medium,High,Good,2.7,0.9,Fog,Good,No,1,Safe,5,Medium,63
+Coimbatore,Isha Yoga Center,10.9862,76.7356,Medium,High,Poor,3.5,4.7,Fog,Good,No,3,Outside,19,Unsafe,13
+Coimbatore,Siruvani Falls,10.947,76.691,High,Medium,Poor,6.2,0.6,Fog,Poor,Yes,8,Outside,13,Unsafe,0
+Coimbatore,Brookefields Mall,11.0183,76.9725,Low,Low,Average,5.4,4.8,Cloudy,Poor,Yes,0,Outside,15,Unsafe,32
+Coimbatore,Perur Temple,10.976,76.9123,Low,Medium,Good,5.9,6.7,Rain,Poor,No,0,Safe,16,Unsafe,57
+Coimbatore,Black Thunder,11.3122,76.9415,High,High,Average,2.7,1.3,Clear,Poor,No,2,Outside,17,Unsafe,13
+Coimbatore,Kovai Kutralam,10.9414,76.7602,Medium,High,Good,7.9,2.3,Clear,Average,No,1,Outside,3,Unsafe,33
+Madurai,Meenakshi Temple,9.9195,78.1193,Medium,Low,Good,2.9,7.3,Fog,Average,Yes,6,Outside,14,Unsafe,13
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,Medium,High,Poor,6.3,8.5,Clear,Average,No,3,Safe,6,Unsafe,13
+Madurai,Alagar Kovil,10.0203,78.1745,Medium,Low,Good,6.9,2.9,Clear,Good,Yes,1,Safe,6,Unsafe,51
+Madurai,Vaigai Dam,9.8264,77.4947,Low,High,Poor,4.5,1.5,Fog,Poor,Yes,7,Outside,3,Unsafe,16
+Madurai,Gandhi Museum,9.934,78.1306,High,High,Average,7.9,5.8,Fog,Poor,No,1,Outside,18,Unsafe,0
+Madurai,Samanar Hills,9.8883,78.0675,High,High,Average,0.9,9.7,Fog,Poor,Yes,0,Outside,13,Unsafe,0
+Madurai,Pazhamudhircholai,10.0321,78.1776,High,Low,Good,6.5,6.5,Cloudy,Poor,No,7,Outside,9,Unsafe,0
+Madurai,Vandiyur Mariamman Temple,9.9304,78.1502,Medium,Medium,Poor,2.5,6.9,Clear,Average,No,6,Safe,14,Unsafe,22
+Salem,Yercaud Lake,11.7753,78.2095,Medium,Low,Poor,3.6,1.7,Rain,Average,No,8,Safe,14,Unsafe,41
+Salem,Pagoda Point,11.7835,78.2145,High,Low,Good,5.0,7.5,Rain,Average,Yes,0,Outside,20,Unsafe,5
+Salem,Anna Park,11.7741,78.209,High,Medium,Poor,4.6,5.6,Clear,Poor,No,4,Outside,8,Unsafe,0
+Salem,Kiliyur Falls,11.7793,78.214,Medium,Medium,Poor,6.6,4.5,Clear,Good,Yes,3,Safe,8,Unsafe,16
+Salem,1008 Lingam Temple,11.6643,78.146,Medium,Medium,Good,3.4,3.6,Fog,Average,No,6,Safe,20,Unsafe,50
+Salem,Mettur Dam,11.8005,77.8002,Medium,Low,Average,5.0,8.5,Cloudy,Average,No,4,Safe,11,Unsafe,41
+Salem,Sugavaneswarar Temple,11.6643,78.146,High,Medium,Good,1.5,7.3,Fog,Poor,Yes,4,Safe,16,Unsafe,22
+Salem,Kurumbapatti Zoo,11.687,78.1502,Low,Medium,Good,2.3,10.0,Rain,Average,Yes,2,Safe,5,Unsafe,51
+Namakkal,Namakkal Fort,11.2194,78.1676,Low,Low,Average,1.4,6.3,Rain,Good,No,0,Outside,20,Unsafe,54
+Namakkal,Anjaneyar Temple,11.219,78.1675,High,High,Poor,2.4,5.7,Cloudy,Poor,Yes,4,Safe,5,Unsafe,0
+Namakkal,Kolli Hills,11.2485,78.3435,High,High,Average,4.5,7.0,Cloudy,Good,No,5,Outside,13,Unsafe,0
+Namakkal,Aagaya Gangai Falls,11.2735,78.3335,Medium,Low,Average,5.7,4.9,Fog,Average,No,2,Safe,5,Unsafe,45
+Namakkal,Rasipuram Temple,11.4605,78.1865,Low,High,Poor,2.2,7.0,Fog,Poor,No,7,Outside,16,Unsafe,10
+Namakkal,Mohanur River,11.0605,78.14,Low,High,Poor,4.8,6.1,Rain,Average,Yes,5,Outside,8,Unsafe,2
+Namakkal,Paramathi Velur,11.1098,78.0031,High,Low,Good,5.6,2.1,Fog,Good,No,5,Safe,5,Unsafe,35
+Namakkal,Naina Malai,11.317,78.205,Medium,Low,Good,6.1,4.9,Cloudy,Good,No,8,Safe,20,Unsafe,41
+Karur,Pasupatheswarar Temple,10.9601,78.0766,High,Medium,Average,0.5,4.7,Cloudy,Good,Yes,4,Safe,15,Unsafe,24
+Karur,Pugalur,10.9301,78.036,Low,High,Poor,5.0,6.8,Rain,Average,Yes,0,Outside,11,Unsafe,12
+Karur,Kalyana Venkataramana Temple,10.9595,78.0764,Low,Low,Average,3.0,8.1,Cloudy,Average,Yes,2,Safe,4,Unsafe,48
+Karur,Nerur Temple,10.9032,78.0625,Medium,Low,Poor,4.4,4.9,Fog,Poor,No,8,Safe,6,Unsafe,33
+Karur,Amaravathi River,10.9654,78.0863,Low,Low,Poor,5.7,0.7,Fog,Average,Yes,0,Safe,7,Unsafe,50
+Karur,Thanthonimalai,10.9607,78.0805,Medium,Medium,Poor,7.9,2.0,Fog,Good,Yes,4,Outside,11,Unsafe,2
+Karur,Karur Bus Stand,10.96,78.076,Medium,High,Poor,5.0,5.6,Clear,Average,No,2,Outside,12,Unsafe,15
+Karur,Textile Market,10.9584,78.0748,High,Medium,Poor,3.8,3.2,Fog,Average,No,0,Outside,9,Unsafe,4
+Tiruchirappalli,Rock Fort,10.8316,78.6936,Low,Low,Average,7.6,6.5,Clear,Poor,No,8,Safe,3,Unsafe,38
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,Medium,Low,Poor,5.3,8.2,Rain,Poor,No,4,Outside,6,Unsafe,1
+Tiruchirappalli,Kallanai Dam,10.8525,78.913,High,Low,Poor,4.8,6.2,Cloudy,Good,No,1,Outside,5,Unsafe,0
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,High,Medium,Average,7.2,2.6,Fog,Average,No,6,Outside,17,Unsafe,0
+Tiruchirappalli,Butterfly Park,10.8205,78.6905,Low,High,Average,3.7,7.7,Clear,Good,Yes,4,Outside,5,Unsafe,14
+Tiruchirappalli,Mukkombu,10.9065,78.6034,High,High,Good,4.3,7.9,Rain,Poor,No,5,Outside,7,Unsafe,0
+Tiruchirappalli,St Joseph Church,10.824,78.6901,High,High,Average,2.7,4.0,Fog,Good,No,0,Outside,10,Unsafe,9
+Tiruchirappalli,Central Bus Stand,10.7905,78.6804,High,Medium,Good,2.1,6.6,Cloudy,Good,Yes,8,Outside,8,Unsafe,0
+Thanjavur,Brihadeeswarar Temple,10.7828,79.1318,High,Medium,Poor,5.0,8.8,Rain,Average,Yes,3,Outside,14,Unsafe,0
+Thanjavur,Saraswathi Mahal,10.783,79.132,Low,Low,Average,3.2,5.5,Rain,Poor,Yes,3,Outside,3,Unsafe,36
+Thanjavur,Thanjavur Palace,10.7825,79.1322,Low,Medium,Good,7.1,2.8,Rain,Poor,Yes,8,Outside,6,Unsafe,27
+Thanjavur,Sivaganga Park,10.7823,79.1335,Medium,Medium,Poor,5.5,5.8,Rain,Poor,No,0,Outside,14,Unsafe,14
+Thanjavur,Punnainallur Temple,10.8293,79.1744,Low,High,Poor,3.1,2.6,Cloudy,Poor,No,6,Safe,5,Unsafe,50
+Thanjavur,Grand Anicut Canal,10.7911,79.1605,Low,Low,Poor,1.2,4.4,Cloudy,Good,Yes,3,Safe,4,Unsafe,56
+Thanjavur,Royal Museum,10.7829,79.1315,Low,High,Average,0.7,6.3,Fog,Average,No,3,Outside,16,Unsafe,38
+Thanjavur,Railway Junction,10.786,79.139,High,Low,Average,3.7,3.1,Rain,Poor,No,6,Safe,15,Unsafe,27
+Kanniyakumari,Vivekananda Rock,8.078,77.555,Medium,Medium,Poor,2.2,8.5,Fog,Average,No,3,Safe,15,Unsafe,28
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,High,Low,Good,4.5,0.8,Cloudy,Good,Yes,2,Outside,17,Unsafe,19
+Kanniyakumari,Sunrise Point,8.0795,77.5548,Low,Medium,Average,4.6,3.5,Cloudy,Good,No,7,Safe,12,Unsafe,55
+Kanniyakumari,Sunset Point,8.0756,77.549,High,High,Poor,5.7,3.0,Clear,Poor,Yes,3,Outside,4,Unsafe,0
+Kanniyakumari,Kanyakumari Beach,8.079,77.5545,High,Low,Good,5.6,9.8,Rain,Poor,Yes,2,Outside,4,Unsafe,0
+Kanniyakumari,Padmanabhapuram Palace,8.2505,77.3255,Medium,High,Average,2.8,2.4,Cloudy,Poor,Yes,2,Outside,7,Unsafe,21
+Kanniyakumari,Mathur Aqueduct,8.307,77.315,Low,Medium,Good,5.7,8.2,Clear,Poor,No,5,Safe,8,Unsafe,47
+Kanniyakumari,Vattakottai Fort,8.1262,77.566,Medium,Low,Good,4.2,9.4,Cloudy,Poor,No,2,Safe,8,Unsafe,53
+Nilgiris,Ooty Lake,11.4064,76.6932,Low,High,Poor,2.4,2.1,Clear,Average,Yes,2,Outside,19,Unsafe,26
+Nilgiris,Botanical Garden,11.4125,76.7115,High,High,Poor,2.7,1.6,Rain,Poor,No,5,Safe,6,Unsafe,17
+Nilgiris,Doddabetta Peak,11.4065,76.735,High,Medium,Good,2.5,5.6,Fog,Good,No,8,Outside,6,Unsafe,6
+Nilgiris,Pykara Falls,11.4702,76.6045,High,Low,Average,8.0,3.5,Fog,Good,Yes,8,Safe,7,Unsafe,1
+Nilgiris,Avalanche Lake,11.302,76.633,Low,Medium,Good,0.5,9.2,Rain,Poor,No,2,Outside,17,Unsafe,53
+Nilgiris,Emerald Lake,11.3382,76.6155,Medium,Low,Average,3.1,2.5,Rain,Average,Yes,7,Safe,5,Unsafe,41
+Nilgiris,Tea Museum,11.4122,76.7055,High,Medium,Good,4.7,2.6,Clear,Good,No,7,Safe,15,Unsafe,36
+Nilgiris,Rose Garden,11.4152,76.7065,High,High,Average,1.1,3.6,Cloudy,Poor,No,8,Outside,10,Unsafe,3
+Namakkal,Mohanur River,11.0605,78.14,Medium,Low,Poor,5.2,4.7,Cloudy,Good,No,4,Safe,13,Unsafe,31
+Namakkal,Paramathi Velur,11.1098,78.0031,Medium,High,Poor,4.9,7.4,Rain,Poor,No,6,Safe,3,Unsafe,17
+Nilgiris,Ooty Lake,11.4064,76.6932,High,High,Average,4.3,6.8,Cloudy,Average,Yes,6,Outside,15,Unsafe,0
+Namakkal,Namakkal Fort,11.2194,78.1676,Medium,Low,Average,2.3,6.5,Clear,Good,Yes,3,Outside,4,Unsafe,11
+Madurai,Samanar Hills,9.8883,78.0675,Low,High,Average,3.6,8.0,Clear,Poor,No,8,Outside,8,Unsafe,18
+Nilgiris,Tea Museum,11.4122,76.7055,Low,High,Average,6.1,5.7,Clear,Poor,No,1,Outside,3,Unsafe,32
+Thanjavur,Sivaganga Park,10.7823,79.1335,High,Medium,Good,6.2,4.7,Clear,Good,Yes,2,Safe,11,Unsafe,16
+Coimbatore,Perur Temple,10.976,76.9123,Low,High,Average,4.7,0.9,Fog,Poor,No,3,Safe,5,Medium,66
+Nilgiris,Emerald Lake,11.3382,76.6155,Low,Low,Poor,3.2,8.8,Clear,Good,Yes,8,Outside,11,Unsafe,6
+Thanjavur,Saraswathi Mahal,10.783,79.132,Low,High,Average,7.6,6.9,Rain,Good,No,5,Outside,20,Unsafe,14
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,Low,High,Average,7.4,5.7,Clear,Average,Yes,3,Safe,18,Unsafe,36
+Karur,Karur Bus Stand,10.96,78.076,Low,High,Good,7.8,1.2,Rain,Good,No,5,Safe,15,Medium,60
+Karur,Thanthonimalai,10.9607,78.0805,Low,High,Good,3.4,9.5,Rain,Poor,Yes,2,Outside,10,Unsafe,26
+Kanniyakumari,Vivekananda Rock,8.078,77.555,Medium,Low,Average,2.7,3.4,Clear,Good,No,7,Safe,10,Unsafe,45
+Karur,Amaravathi River,10.9654,78.0863,High,Medium,Average,3.0,1.7,Fog,Average,Yes,2,Safe,9,Unsafe,26
+Chennai,VGP Golden Beach,12.9124,80.2517,Low,Medium,Average,6.1,3.9,Clear,Poor,Yes,1,Outside,4,Unsafe,25
+Salem,Sugavaneswarar Temple,11.6643,78.146,High,Low,Good,1.3,1.2,Cloudy,Poor,Yes,6,Outside,14,Unsafe,21
+Kanniyakumari,Kanyakumari Beach,8.079,77.5545,Medium,Medium,Poor,3.2,5.5,Clear,Good,Yes,0,Safe,16,Unsafe,32
+Namakkal,Mohanur River,11.0605,78.14,High,Medium,Poor,5.0,3.5,Cloudy,Good,No,7,Safe,8,Unsafe,10
+Namakkal,Paramathi Velur,11.1098,78.0031,High,High,Good,0.5,3.4,Cloudy,Poor,No,3,Outside,7,Unsafe,21
+Nilgiris,Botanical Garden,11.4125,76.7115,High,Medium,Good,5.8,2.8,Rain,Good,Yes,5,Outside,12,Unsafe,0
+Coimbatore,Siruvani Falls,10.947,76.691,High,Low,Good,6.1,6.5,Cloudy,Good,No,5,Safe,14,Unsafe,17
+Coimbatore,VOC Park,11.0032,76.9725,Low,Medium,Average,4.5,6.0,Rain,Average,Yes,0,Safe,9,Unsafe,57
+Chennai,Kapaleeshwar Temple,13.0339,80.269,Medium,Medium,Average,3.7,8.4,Rain,Good,No,6,Safe,14,Unsafe,32
+Chennai,Government Museum,13.0722,80.264,High,Low,Good,3.9,2.3,Rain,Good,Yes,4,Safe,3,Unsafe,35
+Tiruchirappalli,Mukkombu,10.9065,78.6034,High,High,Poor,4.0,6.7,Fog,Poor,Yes,6,Outside,15,Unsafe,0
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,Medium,High,Good,3.5,5.4,Cloudy,Good,No,0,Safe,12,Unsafe,57
+Tiruchirappalli,Mukkombu,10.9065,78.6034,Medium,Low,Good,2.8,8.7,Cloudy,Poor,No,3,Outside,5,Unsafe,31
+Karur,Pasupatheswarar Temple,10.9601,78.0766,High,Medium,Poor,3.7,7.8,Clear,Poor,No,5,Outside,8,Unsafe,0
+Kanniyakumari,Vattakottai Fort,8.1262,77.566,Medium,High,Good,1.3,6.9,Fog,Poor,No,2,Safe,19,Unsafe,53
+Nilgiris,Botanical Garden,11.4125,76.7115,Medium,Medium,Good,1.1,2.9,Clear,Good,Yes,3,Outside,6,Unsafe,42
+Tiruchirappalli,Butterfly Park,10.8205,78.6905,Medium,High,Average,5.0,6.3,Clear,Poor,No,7,Outside,15,Unsafe,5
+Coimbatore,Black Thunder,11.3122,76.9415,Low,High,Poor,6.7,5.1,Fog,Average,Yes,2,Safe,16,Unsafe,28
+Chennai,Guindy National Park,13.0108,80.2295,Low,High,Good,5.0,0.5,Fog,Average,No,5,Safe,16,Medium,70
+Namakkal,Mohanur River,11.0605,78.14,High,Medium,Good,4.1,5.6,Rain,Average,Yes,3,Safe,14,Unsafe,24
+Madurai,Samanar Hills,9.8883,78.0675,Low,Low,Average,5.9,8.0,Fog,Good,Yes,0,Safe,9,Unsafe,42
+Coimbatore,Kovai Kutralam,10.9414,76.7602,Medium,Medium,Average,1.7,10.0,Clear,Good,No,4,Outside,17,Unsafe,26
+Thanjavur,Railway Junction,10.786,79.139,Medium,High,Good,6.3,7.9,Rain,Good,Yes,7,Safe,5,Unsafe,11
+Nilgiris,Doddabetta Peak,11.4065,76.735,Medium,High,Poor,2.4,9.9,Clear,Average,No,0,Outside,16,Unsafe,9
+Madurai,Vaigai Dam,9.8264,77.4947,High,High,Good,7.5,0.8,Clear,Good,Yes,1,Safe,12,Unsafe,21
+Madurai,Gandhi Museum,9.934,78.1306,High,High,Poor,3.5,3.7,Fog,Average,Yes,4,Outside,15,Unsafe,0
+Coimbatore,Brookefields Mall,11.0183,76.9725,Low,Low,Good,1.8,1.4,Fog,Good,No,8,Outside,3,Medium,64
+Namakkal,Mohanur River,11.0605,78.14,Low,Medium,Average,2.0,1.1,Clear,Good,No,0,Outside,20,Medium,67
+Namakkal,Rasipuram Temple,11.4605,78.1865,High,Medium,Good,7.2,4.6,Fog,Poor,No,1,Safe,7,Unsafe,30
+Kanniyakumari,Padmanabhapuram Palace,8.2505,77.3255,Low,Low,Average,6.1,4.5,Rain,Average,No,2,Outside,19,Unsafe,40
+Coimbatore,Isha Yoga Center,10.9862,76.7356,Medium,Medium,Good,2.6,8.9,Fog,Average,No,5,Safe,14,Unsafe,42
+Salem,Mettur Dam,11.8005,77.8002,Low,Low,Good,3.9,1.2,Rain,Poor,Yes,4,Safe,13,Medium,70
+Coimbatore,Perur Temple,10.976,76.9123,Low,Medium,Average,4.8,5.5,Fog,Average,Yes,2,Outside,6,Unsafe,33
+Nilgiris,Ooty Lake,11.4064,76.6932,High,Medium,Good,5.8,2.8,Clear,Good,No,7,Safe,12,Unsafe,26
+Karur,Karur Bus Stand,10.96,78.076,Low,High,Average,2.2,5.6,Rain,Average,No,2,Safe,16,Medium,60
+Karur,Nerur Temple,10.9032,78.0625,High,Medium,Good,4.2,2.4,Fog,Good,No,5,Outside,13,Unsafe,20
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,Low,High,Average,5.1,1.4,Clear,Average,No,4,Outside,5,Unsafe,34
+Salem,Mettur Dam,11.8005,77.8002,Medium,High,Average,4.1,3.5,Clear,Average,No,3,Safe,6,Unsafe,43
+Coimbatore,Marudhamalai Temple,11.0453,76.862,Medium,High,Average,2.8,3.8,Rain,Poor,No,2,Outside,14,Unsafe,25
+Nilgiris,Rose Garden,11.4152,76.7065,Medium,Low,Average,6.3,0.5,Fog,Good,No,4,Outside,19,Unsafe,29
+Kanniyakumari,Vivekananda Rock,8.078,77.555,High,Low,Average,5.2,2.7,Fog,Good,Yes,6,Safe,7,Unsafe,13
+Tiruchirappalli,Rock Fort,10.8316,78.6936,Low,High,Average,4.0,2.0,Fog,Poor,Yes,4,Outside,9,Unsafe,32
+Namakkal,Paramathi Velur,11.1098,78.0031,High,Low,Poor,0.9,5.8,Clear,Good,Yes,4,Safe,20,Unsafe,19
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,High,High,Poor,7.2,1.7,Rain,Good,No,2,Safe,5,Unsafe,13
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,Low,High,Poor,6.1,5.4,Cloudy,Good,Yes,1,Outside,18,Unsafe,10
+Chennai,Anna Nagar Tower Park,13.085,80.2101,High,Low,Average,3.1,5.5,Rain,Average,No,0,Safe,4,Unsafe,39
+Thanjavur,Royal Museum,10.7829,79.1315,High,High,Average,6.3,7.3,Clear,Good,No,7,Outside,15,Unsafe,0
+Nilgiris,Botanical Garden,11.4125,76.7115,High,High,Good,7.5,8.3,Cloudy,Poor,No,7,Safe,11,Unsafe,3
+Karur,Amaravathi River,10.9654,78.0863,Medium,Low,Good,1.1,8.2,Cloudy,Poor,No,0,Safe,20,Medium,67
+Salem,Kiliyur Falls,11.7793,78.214,High,High,Average,0.8,4.3,Cloudy,Good,Yes,5,Outside,15,Unsafe,0
+Salem,Pagoda Point,11.7835,78.2145,Medium,High,Good,5.0,1.9,Rain,Average,No,2,Outside,13,Unsafe,41
+Chennai,Marina Beach,13.05,80.2824,High,Medium,Average,5.3,4.4,Rain,Average,No,8,Outside,5,Unsafe,0
+Karur,Pugalur,10.9301,78.036,High,Medium,Good,5.7,6.4,Rain,Poor,Yes,7,Safe,17,Unsafe,0
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,Medium,High,Average,7.2,5.1,Fog,Poor,Yes,2,Outside,10,Unsafe,3
+Thanjavur,Royal Museum,10.7829,79.1315,Medium,Medium,Good,3.9,1.2,Rain,Good,No,8,Safe,11,Unsafe,54
+Kanniyakumari,Padmanabhapuram Palace,8.2505,77.3255,High,High,Good,3.0,2.0,Clear,Poor,Yes,8,Outside,18,Unsafe,0
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,High,Low,Good,1.1,9.2,Clear,Good,No,6,Safe,8,Unsafe,35
+Kanniyakumari,Mathur Aqueduct,8.307,77.315,Low,High,Poor,7.5,4.4,Rain,Good,Yes,7,Safe,3,Unsafe,18
+Namakkal,Namakkal Fort,11.2194,78.1676,High,High,Average,5.1,3.5,Rain,Poor,No,0,Safe,20,Unsafe,19
+Madurai,Alagar Kovil,10.0203,78.1745,High,Medium,Average,3.9,4.3,Cloudy,Average,Yes,7,Outside,7,Unsafe,0
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,High,Medium,Good,0.8,2.2,Fog,Good,Yes,6,Safe,9,Unsafe,36
+Chennai,Fort St George,13.0827,80.287,High,High,Poor,2.4,2.6,Rain,Average,No,6,Safe,16,Unsafe,15
+Chennai,Anna Nagar Tower Park,13.085,80.2101,Low,Medium,Average,4.1,4.0,Clear,Poor,No,4,Outside,13,Unsafe,41
+Chennai,Elliot Beach,13.0003,80.2667,High,High,Poor,4.4,5.0,Rain,Poor,No,2,Safe,20,Unsafe,15
+Nilgiris,Tea Museum,11.4122,76.7055,Medium,High,Average,4.3,3.2,Rain,Average,Yes,0,Safe,6,Unsafe,37
+Namakkal,Rasipuram Temple,11.4605,78.1865,High,Low,Poor,4.7,7.1,Fog,Poor,Yes,3,Outside,8,Unsafe,0
+Karur,Thanthonimalai,10.9607,78.0805,High,Low,Average,3.2,9.1,Rain,Poor,Yes,6,Safe,14,Unsafe,5
+Thanjavur,Railway Junction,10.786,79.139,Low,High,Good,5.9,6.5,Cloudy,Good,Yes,1,Outside,18,Unsafe,18
+Thanjavur,Sivaganga Park,10.7823,79.1335,Medium,Low,Good,2.5,1.3,Cloudy,Poor,Yes,7,Outside,20,Unsafe,29
+Kanniyakumari,Vivekananda Rock,8.078,77.555,Medium,High,Good,2.8,2.2,Fog,Good,No,1,Outside,8,Unsafe,43
+Salem,Sugavaneswarar Temple,11.6643,78.146,Low,High,Poor,7.0,6.9,Fog,Average,Yes,7,Safe,3,Unsafe,8
+Karur,Karur Bus Stand,10.96,78.076,Medium,Low,Good,3.7,4.8,Clear,Good,No,1,Safe,16,Medium,65
+Salem,Pagoda Point,11.7835,78.2145,Medium,High,Good,2.1,9.1,Clear,Good,Yes,6,Outside,4,Unsafe,3
+Chennai,Elliot Beach,13.0003,80.2667,Low,Medium,Average,1.9,5.7,Fog,Good,Yes,7,Outside,4,Unsafe,33
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,High,Medium,Average,3.6,6.4,Rain,Poor,Yes,1,Outside,18,Unsafe,0
+Nilgiris,Emerald Lake,11.3382,76.6155,High,Low,Good,6.4,9.8,Clear,Good,No,6,Safe,13,Unsafe,15
+Kanniyakumari,Mathur Aqueduct,8.307,77.315,Medium,High,Average,1.9,6.5,Clear,Average,Yes,1,Safe,20,Unsafe,35
+Karur,Nerur Temple,10.9032,78.0625,Medium,Medium,Good,5.5,2.5,Fog,Average,No,0,Outside,4,Unsafe,40
+Karur,Pasupatheswarar Temple,10.9601,78.0766,Medium,Medium,Average,3.7,3.4,Fog,Average,Yes,4,Safe,11,Unsafe,34
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,High,High,Average,3.5,2.9,Cloudy,Average,Yes,1,Safe,9,Unsafe,23
+Chennai,Fort St George,13.0827,80.287,Low,High,Good,4.1,3.1,Clear,Average,No,6,Safe,13,Medium,60
+Salem,Pagoda Point,11.7835,78.2145,Low,High,Average,1.4,9.5,Clear,Good,No,8,Outside,19,Unsafe,28
+Thanjavur,Sivaganga Park,10.7823,79.1335,High,High,Good,3.0,3.6,Fog,Average,No,6,Outside,17,Unsafe,5
+Kanniyakumari,Padmanabhapuram Palace,8.2505,77.3255,Medium,Low,Good,6.1,4.7,Clear,Good,No,4,Outside,12,Unsafe,29
+Karur,Thanthonimalai,10.9607,78.0805,High,Medium,Average,2.2,8.6,Clear,Average,No,7,Outside,4,Unsafe,0
+Tiruchirappalli,St Joseph Church,10.824,78.6901,High,High,Good,7.3,4.8,Fog,Poor,Yes,2,Safe,10,Unsafe,11
+Kanniyakumari,Padmanabhapuram Palace,8.2505,77.3255,High,High,Good,2.2,2.9,Fog,Average,Yes,1,Outside,7,Unsafe,11
+Madurai,Gandhi Museum,9.934,78.1306,High,Low,Average,5.9,7.5,Clear,Good,Yes,0,Safe,8,Unsafe,7
+Thanjavur,Royal Museum,10.7829,79.1315,Medium,Medium,Poor,1.3,8.5,Fog,Average,No,6,Safe,4,Unsafe,32
+Madurai,Vaigai Dam,9.8264,77.4947,Medium,High,Good,4.2,2.4,Cloudy,Average,Yes,0,Outside,16,Unsafe,33
+Namakkal,Aagaya Gangai Falls,11.2735,78.3335,High,Low,Average,6.5,4.7,Clear,Good,Yes,8,Outside,6,Unsafe,0
+Namakkal,Mohanur River,11.0605,78.14,Low,Medium,Poor,6.9,2.4,Clear,Good,Yes,8,Outside,18,Unsafe,9
+Coimbatore,Black Thunder,11.3122,76.9415,Medium,Low,Poor,4.6,6.1,Cloudy,Good,No,0,Outside,15,Unsafe,19
+Madurai,Samanar Hills,9.8883,78.0675,Medium,Medium,Poor,4.6,9.0,Clear,Poor,No,7,Outside,18,Unsafe,0
+Karur,Textile Market,10.9584,78.0748,Low,Medium,Good,1.2,7.6,Cloudy,Average,No,4,Safe,20,Medium,69
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,Medium,Medium,Good,6.6,8.3,Fog,Good,No,2,Outside,5,Unsafe,18
+Madurai,Alagar Kovil,10.0203,78.1745,High,High,Average,4.5,5.4,Fog,Average,Yes,3,Safe,10,Unsafe,11
+Karur,Pasupatheswarar Temple,10.9601,78.0766,Low,High,Good,5.3,5.9,Clear,Poor,No,4,Outside,6,Unsafe,34
+Karur,Thanthonimalai,10.9607,78.0805,High,Low,Poor,1.1,3.2,Rain,Good,No,4,Outside,16,Unsafe,11
+Tiruchirappalli,Butterfly Park,10.8205,78.6905,Medium,Medium,Poor,2.9,6.9,Fog,Good,Yes,8,Safe,7,Unsafe,6
+Namakkal,Aagaya Gangai Falls,11.2735,78.3335,Low,Medium,Poor,1.1,9.4,Fog,Good,Yes,7,Safe,20,Unsafe,33
+Tiruchirappalli,Kallanai Dam,10.8525,78.913,Low,Low,Poor,7.5,9.9,Cloudy,Good,Yes,7,Safe,4,Unsafe,18
+Chennai,Fort St George,13.0827,80.287,Medium,Medium,Good,2.3,8.3,Cloudy,Good,Yes,7,Outside,6,Unsafe,6
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,Low,Medium,Average,5.0,8.4,Fog,Poor,No,7,Outside,12,Unsafe,25
+Salem,Anna Park,11.7741,78.209,High,Low,Average,7.4,7.8,Fog,Good,No,0,Outside,9,Unsafe,0
+Kanniyakumari,Sunset Point,8.0756,77.549,High,Medium,Good,5.5,8.9,Cloudy,Average,No,7,Safe,3,Unsafe,8
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,Low,High,Good,3.9,5.3,Fog,Average,No,0,Safe,9,Medium,72
+Tiruchirappalli,Central Bus Stand,10.7905,78.6804,Low,High,Good,2.1,5.9,Cloudy,Poor,No,5,Safe,10,Medium,62
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,Low,Medium,Good,0.6,1.4,Clear,Good,Yes,8,Outside,19,Unsafe,47
+Nilgiris,Doddabetta Peak,11.4065,76.735,Low,Medium,Average,2.9,1.4,Fog,Good,No,1,Outside,14,Unsafe,55
+Chennai,VGP Golden Beach,12.9124,80.2517,Low,Medium,Average,6.0,3.1,Fog,Good,No,8,Outside,10,Unsafe,23
+Nilgiris,Tea Museum,11.4122,76.7055,Medium,High,Average,5.1,1.6,Rain,Poor,No,8,Outside,10,Unsafe,11
+Madurai,Gandhi Museum,9.934,78.1306,Medium,Low,Poor,6.5,2.1,Fog,Poor,No,8,Safe,9,Unsafe,31
+Tiruchirappalli,Kallanai Dam,10.8525,78.913,Low,Medium,Poor,7.2,6.0,Rain,Poor,Yes,4,Safe,13,Unsafe,29
+Nilgiris,Emerald Lake,11.3382,76.6155,Medium,High,Poor,4.0,0.8,Fog,Poor,Yes,8,Safe,8,Unsafe,19
+Nilgiris,Avalanche Lake,11.302,76.633,Low,Low,Average,4.4,2.7,Clear,Average,No,2,Safe,12,Medium,78
+Thanjavur,Thanjavur Palace,10.7825,79.1322,Medium,Medium,Good,7.8,8.8,Clear,Good,Yes,6,Safe,11,Unsafe,18
+Salem,Anna Park,11.7741,78.209,Low,Low,Average,1.7,6.8,Fog,Good,Yes,0,Outside,14,Unsafe,42
+Salem,Sugavaneswarar Temple,11.6643,78.146,Medium,Medium,Good,2.2,2.8,Rain,Good,Yes,4,Safe,7,Unsafe,50
+Chennai,Kapaleeshwar Temple,13.0339,80.269,Low,High,Good,6.7,1.4,Cloudy,Average,No,5,Safe,10,Medium,60
+Namakkal,Aagaya Gangai Falls,11.2735,78.3335,Low,High,Good,2.7,8.2,Rain,Good,Yes,3,Outside,5,Unsafe,24
+Salem,Anna Park,11.7741,78.209,Medium,High,Average,5.3,9.0,Rain,Average,Yes,3,Outside,13,Unsafe,0
+Coimbatore,Kovai Kutralam,10.9414,76.7602,Low,High,Poor,1.5,1.9,Cloudy,Poor,Yes,0,Safe,16,Medium,60
+Chennai,Marina Beach,13.05,80.2824,Low,Medium,Good,4.0,2.6,Clear,Average,Yes,2,Outside,17,Unsafe,49
+Karur,Nerur Temple,10.9032,78.0625,Medium,Medium,Average,4.0,9.6,Fog,Poor,Yes,8,Safe,18,Unsafe,16
+Nilgiris,Botanical Garden,11.4125,76.7115,Low,Medium,Good,5.2,5.0,Fog,Poor,Yes,4,Safe,17,Unsafe,47
+Namakkal,Naina Malai,11.317,78.205,Low,Low,Average,3.4,5.2,Rain,Poor,Yes,0,Safe,4,Medium,62
+Namakkal,Namakkal Fort,11.2194,78.1676,Low,Low,Good,5.1,7.6,Clear,Poor,No,6,Safe,7,Unsafe,50
+Namakkal,Paramathi Velur,11.1098,78.0031,High,Medium,Good,4.0,0.6,Clear,Poor,No,1,Outside,14,Unsafe,28
+Chennai,Anna Nagar Tower Park,13.085,80.2101,Medium,Low,Good,4.9,8.4,Clear,Poor,Yes,3,Safe,3,Unsafe,39
+Tiruchirappalli,Mukkombu,10.9065,78.6034,Low,Medium,Good,1.8,8.3,Clear,Average,Yes,5,Safe,12,Unsafe,55
+Salem,Kiliyur Falls,11.7793,78.214,Medium,Medium,Poor,2.5,4.6,Cloudy,Poor,No,3,Safe,12,Unsafe,38
+Thanjavur,Brihadeeswarar Temple,10.7828,79.1318,High,High,Average,3.1,1.7,Clear,Good,Yes,0,Safe,11,Unsafe,25
+Thanjavur,Grand Anicut Canal,10.7911,79.1605,Medium,High,Average,0.5,3.9,Fog,Poor,Yes,7,Outside,9,Unsafe,13
+Madurai,Gandhi Museum,9.934,78.1306,Medium,Medium,Average,3.6,9.7,Clear,Poor,Yes,4,Safe,7,Unsafe,24
+Thanjavur,Saraswathi Mahal,10.783,79.132,Medium,High,Average,7.5,5.5,Fog,Good,Yes,6,Outside,18,Unsafe,0
+Namakkal,Mohanur River,11.0605,78.14,Medium,Low,Poor,1.1,6.4,Fog,Poor,Yes,0,Outside,11,Unsafe,17
+Madurai,Vaigai Dam,9.8264,77.4947,High,Low,Good,4.8,7.1,Cloudy,Good,Yes,7,Outside,12,Unsafe,0
+Chennai,Marina Beach,13.05,80.2824,Medium,Medium,Good,6.2,8.8,Cloudy,Poor,Yes,7,Outside,5,Unsafe,0
+Namakkal,Kolli Hills,11.2485,78.3435,Low,Low,Average,7.7,4.8,Clear,Poor,No,2,Outside,7,Unsafe,40
+Tiruchirappalli,St Joseph Church,10.824,78.6901,Medium,Low,Average,1.1,5.3,Cloudy,Average,Yes,3,Safe,9,Unsafe,51
+Madurai,Vaigai Dam,9.8264,77.4947,Medium,Medium,Poor,1.8,1.0,Cloudy,Poor,Yes,8,Outside,20,Unsafe,14
+Karur,Kalyana Venkataramana Temple,10.9595,78.0764,Low,Medium,Poor,4.9,2.9,Rain,Good,Yes,3,Outside,12,Unsafe,29
+Namakkal,Rasipuram Temple,11.4605,78.1865,Low,Medium,Poor,2.3,2.3,Rain,Good,No,8,Safe,4,Unsafe,51
+Thanjavur,Sivaganga Park,10.7823,79.1335,Low,Medium,Poor,4.7,9.4,Clear,Good,No,1,Safe,10,Unsafe,47
+Salem,Yercaud Lake,11.7753,78.2095,Low,High,Average,5.6,7.7,Clear,Good,Yes,7,Safe,18,Unsafe,18
+Salem,Kurumbapatti Zoo,11.687,78.1502,Low,High,Poor,4.5,4.7,Cloudy,Poor,No,5,Outside,18,Unsafe,24
+Thanjavur,Railway Junction,10.786,79.139,Low,High,Good,4.7,2.8,Cloudy,Poor,No,6,Outside,20,Unsafe,48
+Namakkal,Anjaneyar Temple,11.219,78.1675,Low,Medium,Good,6.0,5.8,Cloudy,Poor,No,7,Safe,18,Unsafe,53
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,Medium,Low,Good,5.8,3.9,Cloudy,Average,Yes,3,Outside,8,Unsafe,19
+Tiruchirappalli,Rock Fort,10.8316,78.6936,Low,Medium,Good,4.1,8.8,Fog,Average,No,7,Outside,15,Unsafe,33
+Salem,Yercaud Lake,11.7753,78.2095,Medium,Low,Average,1.6,8.3,Cloudy,Poor,No,2,Outside,9,Unsafe,35
+Tiruchirappalli,Rock Fort,10.8316,78.6936,High,Medium,Poor,3.2,6.0,Fog,Average,Yes,0,Safe,16,Unsafe,12
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,Low,High,Poor,1.8,1.9,Clear,Poor,No,3,Safe,17,Medium,66
+Chennai,Fort St George,13.0827,80.287,High,Low,Good,2.7,5.8,Rain,Good,Yes,3,Safe,15,Unsafe,29
+Coimbatore,Brookefields Mall,11.0183,76.9725,High,Low,Good,6.5,1.4,Fog,Average,No,6,Safe,19,Unsafe,33
+Coimbatore,Perur Temple,10.976,76.9123,Medium,Medium,Good,7.1,8.2,Fog,Average,No,2,Safe,11,Unsafe,38
+Tiruchirappalli,Butterfly Park,10.8205,78.6905,High,High,Poor,2.9,7.5,Rain,Good,Yes,3,Safe,15,Unsafe,0
+Namakkal,Anjaneyar Temple,11.219,78.1675,Medium,Medium,Poor,2.4,7.1,Cloudy,Average,No,0,Safe,15,Unsafe,34
+Thanjavur,Sivaganga Park,10.7823,79.1335,High,Low,Poor,2.9,9.2,Rain,Average,No,1,Safe,9,Unsafe,17
+Nilgiris,Botanical Garden,11.4125,76.7115,Low,Low,Average,3.4,9.4,Cloudy,Average,No,4,Safe,5,Unsafe,56
+Chennai,Guindy National Park,13.0108,80.2295,Low,Low,Poor,3.8,9.9,Fog,Good,No,1,Safe,9,Unsafe,52
+Kanniyakumari,Kanyakumari Beach,8.079,77.5545,Medium,High,Good,4.6,9.1,Rain,Poor,No,8,Outside,3,Unsafe,11
+Coimbatore,Marudhamalai Temple,11.0453,76.862,Low,Low,Average,6.0,2.3,Rain,Average,Yes,7,Safe,10,Unsafe,46
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,High,High,Good,0.5,8.5,Fog,Poor,No,4,Outside,15,Unsafe,9
+Karur,Amaravathi River,10.9654,78.0863,Medium,High,Good,7.3,8.3,Cloudy,Good,Yes,0,Outside,9,Unsafe,5
+Kanniyakumari,Vivekananda Rock,8.078,77.555,Medium,High,Average,7.4,5.1,Rain,Good,No,1,Safe,10,Unsafe,37
+Madurai,Vandiyur Mariamman Temple,9.9304,78.1502,Low,Low,Poor,1.0,8.9,Fog,Average,No,7,Safe,19,Unsafe,50
+Tiruchirappalli,Butterfly Park,10.8205,78.6905,High,Medium,Poor,5.9,3.1,Rain,Average,Yes,5,Outside,19,Unsafe,0
+Chennai,Anna Nagar Tower Park,13.085,80.2101,Medium,Low,Average,3.0,6.9,Fog,Average,No,8,Outside,14,Unsafe,13
+Coimbatore,Siruvani Falls,10.947,76.691,High,Low,Average,4.2,5.5,Rain,Good,No,5,Safe,20,Unsafe,29
+Nilgiris,Doddabetta Peak,11.4065,76.735,High,Medium,Good,4.0,9.7,Cloudy,Average,No,3,Safe,15,Unsafe,26
+Namakkal,Paramathi Velur,11.1098,78.0031,High,Medium,Good,5.1,2.5,Rain,Average,No,2,Safe,11,Unsafe,36
+Namakkal,Aagaya Gangai Falls,11.2735,78.3335,High,Medium,Poor,1.1,1.0,Cloudy,Poor,Yes,6,Outside,6,Unsafe,0
+Karur,Karur Bus Stand,10.96,78.076,Low,Low,Average,1.3,1.0,Fog,Good,Yes,1,Safe,13,Medium,78
+Karur,Amaravathi River,10.9654,78.0863,Low,High,Good,0.6,8.8,Cloudy,Good,No,6,Safe,5,Medium,60
+Kanniyakumari,Vivekananda Rock,8.078,77.555,Low,High,Good,6.2,9.4,Rain,Good,Yes,5,Safe,8,Unsafe,30
+Thanjavur,Brihadeeswarar Temple,10.7828,79.1318,High,Medium,Poor,1.9,3.1,Fog,Good,Yes,4,Outside,15,Unsafe,0
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,Low,Low,Good,0.8,6.3,Clear,Average,Yes,4,Outside,20,Unsafe,42
+Karur,Kalyana Venkataramana Temple,10.9595,78.0764,Low,Medium,Good,3.2,3.4,Fog,Average,No,2,Outside,17,Unsafe,53
+Thanjavur,Grand Anicut Canal,10.7911,79.1605,Low,Medium,Poor,6.4,6.1,Cloudy,Poor,No,0,Outside,19,Unsafe,19
+Nilgiris,Doddabetta Peak,11.4065,76.735,Medium,High,Average,4.1,1.7,Rain,Good,No,8,Outside,5,Unsafe,21
+Namakkal,Paramathi Velur,11.1098,78.0031,Medium,Low,Poor,7.5,1.6,Clear,Average,Yes,4,Safe,13,Unsafe,27
+Karur,Nerur Temple,10.9032,78.0625,Medium,Low,Poor,5.0,8.6,Clear,Good,Yes,6,Outside,5,Unsafe,0
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,High,High,Average,4.7,2.5,Cloudy,Poor,No,3,Safe,20,Unsafe,31
+Salem,Anna Park,11.7741,78.209,Low,Medium,Poor,1.3,4.8,Rain,Good,No,3,Outside,3,Unsafe,43
+Coimbatore,Siruvani Falls,10.947,76.691,Medium,Medium,Poor,4.0,9.6,Fog,Good,Yes,8,Outside,14,Unsafe,0
+Nilgiris,Pykara Falls,11.4702,76.6045,Low,Low,Poor,2.7,4.0,Cloudy,Poor,Yes,1,Outside,10,Unsafe,30
+Namakkal,Aagaya Gangai Falls,11.2735,78.3335,Low,Medium,Poor,2.3,7.0,Cloudy,Average,No,1,Outside,6,Unsafe,27
+Nilgiris,Botanical Garden,11.4125,76.7115,Low,High,Good,6.1,8.1,Fog,Good,Yes,6,Safe,9,Unsafe,28
+Chennai,Elliot Beach,13.0003,80.2667,Medium,High,Good,2.0,9.7,Fog,Good,No,1,Outside,12,Unsafe,35
+Chennai,VGP Golden Beach,12.9124,80.2517,Medium,High,Average,2.4,6.4,Fog,Good,No,8,Outside,16,Unsafe,3
+Tiruchirappalli,Central Bus Stand,10.7905,78.6804,Medium,High,Poor,5.1,10.0,Fog,Poor,No,6,Safe,13,Unsafe,7
+Tiruchirappalli,Rock Fort,10.8316,78.6936,Low,Medium,Poor,2.3,3.9,Clear,Average,No,5,Safe,17,Unsafe,49
+Tiruchirappalli,St Joseph Church,10.824,78.6901,Low,Medium,Good,1.5,5.0,Clear,Good,No,6,Safe,18,Medium,75
+Thanjavur,Brihadeeswarar Temple,10.7828,79.1318,High,Low,Poor,2.6,6.7,Rain,Good,No,1,Outside,11,Unsafe,0
+Chennai,Elliot Beach,13.0003,80.2667,Low,High,Poor,0.7,3.8,Cloudy,Good,Yes,3,Outside,12,Unsafe,26
+Salem,Pagoda Point,11.7835,78.2145,Medium,Medium,Average,7.5,7.6,Rain,Good,Yes,3,Safe,13,Unsafe,16
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,High,Medium,Good,7.0,5.7,Cloudy,Average,Yes,8,Safe,19,Unsafe,4
+Coimbatore,Siruvani Falls,10.947,76.691,High,Low,Average,3.4,7.2,Clear,Average,No,0,Outside,7,Unsafe,9
+Chennai,Kapaleeshwar Temple,13.0339,80.269,High,Low,Good,4.4,9.7,Clear,Poor,No,1,Outside,14,Unsafe,15
+Karur,Karur Bus Stand,10.96,78.076,Low,Medium,Average,3.1,3.7,Cloudy,Average,Yes,4,Outside,20,Unsafe,29
+Nilgiris,Tea Museum,11.4122,76.7055,Medium,Low,Average,5.1,8.0,Rain,Average,Yes,4,Outside,18,Unsafe,0
+Kanniyakumari,Kanyakumari Beach,8.079,77.5545,Low,Medium,Good,7.0,2.2,Fog,Average,Yes,1,Outside,19,Unsafe,41
+Karur,Thanthonimalai,10.9607,78.0805,High,Low,Good,3.0,4.2,Fog,Poor,No,5,Safe,12,Unsafe,37
+Coimbatore,Isha Yoga Center,10.9862,76.7356,High,Low,Good,7.0,8.7,Clear,Good,Yes,1,Safe,12,Unsafe,13
+Coimbatore,Isha Yoga Center,10.9862,76.7356,Medium,High,Poor,3.9,6.9,Clear,Poor,No,2,Outside,8,Unsafe,5
+Namakkal,Rasipuram Temple,11.4605,78.1865,Medium,Medium,Good,1.3,1.4,Rain,Good,Yes,8,Safe,16,Unsafe,52
+Chennai,Kapaleeshwar Temple,13.0339,80.269,Medium,Medium,Average,7.3,9.1,Rain,Poor,No,8,Safe,18,Unsafe,18
+Coimbatore,Siruvani Falls,10.947,76.691,Low,Low,Good,5.1,4.3,Cloudy,Average,Yes,0,Outside,8,Unsafe,40
+Nilgiris,Doddabetta Peak,11.4065,76.735,Medium,High,Poor,3.4,8.2,Clear,Good,No,7,Outside,3,Unsafe,0
+Thanjavur,Punnainallur Temple,10.8293,79.1744,Medium,High,Average,7.1,9.3,Fog,Average,Yes,8,Outside,4,Unsafe,0
+Namakkal,Kolli Hills,11.2485,78.3435,Medium,Low,Good,6.7,3.8,Clear,Good,Yes,0,Safe,8,Unsafe,45
+Namakkal,Paramathi Velur,11.1098,78.0031,Low,Low,Average,7.3,9.9,Rain,Good,No,1,Safe,7,Unsafe,52
+Chennai,Marina Beach,13.05,80.2824,High,Low,Good,5.8,5.0,Fog,Poor,No,0,Outside,11,Unsafe,17
+Salem,Mettur Dam,11.8005,77.8002,Low,High,Average,5.9,5.2,Fog,Poor,Yes,0,Safe,18,Unsafe,42
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,High,Low,Average,5.4,7.4,Cloudy,Average,No,4,Safe,18,Unsafe,11
+Nilgiris,Botanical Garden,11.4125,76.7115,High,Medium,Poor,2.1,5.8,Cloudy,Poor,Yes,2,Safe,18,Unsafe,8
+Madurai,Samanar Hills,9.8883,78.0675,High,Medium,Average,5.6,8.0,Rain,Poor,No,3,Safe,4,Unsafe,8
+Kanniyakumari,Vivekananda Rock,8.078,77.555,High,High,Good,4.1,4.5,Clear,Average,Yes,2,Safe,10,Unsafe,21
+Tiruchirappalli,Mukkombu,10.9065,78.6034,High,Low,Average,4.9,6.4,Rain,Average,No,4,Safe,11,Unsafe,21
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,Low,Medium,Poor,5.6,9.9,Fog,Good,No,6,Safe,20,Unsafe,27
+Coimbatore,Black Thunder,11.3122,76.9415,High,Low,Poor,1.0,4.7,Rain,Average,Yes,7,Safe,12,Unsafe,13
+Kanniyakumari,Vivekananda Rock,8.078,77.555,Medium,Low,Poor,4.9,6.2,Fog,Good,No,0,Safe,3,Unsafe,39
+Salem,Kiliyur Falls,11.7793,78.214,Low,High,Poor,3.4,6.8,Rain,Good,No,0,Outside,15,Unsafe,24
+Kanniyakumari,Kanyakumari Beach,8.079,77.5545,Medium,Medium,Poor,3.0,3.0,Cloudy,Good,Yes,2,Safe,15,Unsafe,36
+Madurai,Alagar Kovil,10.0203,78.1745,Low,High,Average,3.9,7.2,Fog,Average,No,0,Outside,6,Unsafe,34
+Nilgiris,Pykara Falls,11.4702,76.6045,Low,Medium,Average,7.6,4.4,Cloudy,Good,No,6,Outside,15,Unsafe,27
+Chennai,Marina Beach,13.05,80.2824,High,Low,Poor,4.4,3.8,Rain,Average,Yes,6,Safe,19,Unsafe,5
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,Low,High,Poor,1.5,7.6,Fog,Poor,Yes,4,Safe,10,Unsafe,34
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,High,High,Good,6.4,6.0,Fog,Poor,No,0,Outside,11,Unsafe,7
+Tiruchirappalli,St Joseph Church,10.824,78.6901,Medium,Low,Poor,2.0,7.4,Fog,Poor,Yes,6,Outside,19,Unsafe,5
+Madurai,Samanar Hills,9.8883,78.0675,Medium,High,Average,2.1,3.0,Fog,Good,Yes,6,Outside,7,Unsafe,13
+Chennai,VGP Golden Beach,12.9124,80.2517,Low,Low,Average,4.6,4.2,Rain,Average,No,5,Outside,4,Unsafe,44
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,Medium,Medium,Good,0.9,4.8,Cloudy,Average,No,3,Outside,9,Unsafe,46
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,Low,Low,Average,7.7,7.1,Fog,Poor,No,4,Outside,8,Unsafe,26
+Salem,Sugavaneswarar Temple,11.6643,78.146,Low,High,Average,1.7,7.9,Rain,Average,No,2,Safe,4,Medium,60
+Thanjavur,Saraswathi Mahal,10.783,79.132,High,High,Poor,0.8,1.0,Fog,Average,No,6,Outside,13,Unsafe,5
+Chennai,Government Museum,13.0722,80.264,Low,Medium,Poor,2.6,7.2,Rain,Average,No,2,Outside,9,Unsafe,25
+Madurai,Alagar Kovil,10.0203,78.1745,High,Medium,Average,2.2,1.8,Cloudy,Poor,No,2,Outside,5,Unsafe,18
+Tiruchirappalli,St Joseph Church,10.824,78.6901,Medium,High,Average,5.2,4.1,Rain,Average,Yes,5,Safe,20,Unsafe,17
+Nilgiris,Emerald Lake,11.3382,76.6155,Medium,High,Average,6.4,6.8,Fog,Average,Yes,0,Outside,12,Unsafe,0
+Karur,Pugalur,10.9301,78.036,Medium,Low,Good,6.6,8.7,Fog,Average,No,1,Outside,13,Unsafe,25
+Karur,Thanthonimalai,10.9607,78.0805,High,High,Poor,7.1,6.1,Fog,Good,No,6,Safe,13,Unsafe,0
+Coimbatore,Brookefields Mall,11.0183,76.9725,Low,Low,Average,2.6,1.6,Fog,Average,No,3,Outside,4,Unsafe,56
+Karur,Pasupatheswarar Temple,10.9601,78.0766,Low,Low,Average,3.4,6.3,Rain,Good,Yes,2,Safe,13,Unsafe,48
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,High,Low,Average,3.7,4.3,Rain,Good,No,8,Outside,19,Unsafe,3
+Salem,Kiliyur Falls,11.7793,78.214,Medium,High,Average,1.5,8.2,Rain,Average,No,5,Safe,20,Unsafe,39
+Namakkal,Paramathi Velur,11.1098,78.0031,High,High,Poor,7.8,3.9,Clear,Poor,Yes,1,Outside,11,Unsafe,0
+Salem,Mettur Dam,11.8005,77.8002,High,Medium,Poor,3.8,8.3,Fog,Good,Yes,3,Safe,8,Unsafe,0
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,Low,High,Good,3.5,4.6,Cloudy,Average,Yes,8,Outside,17,Unsafe,24
+Namakkal,Kolli Hills,11.2485,78.3435,Low,High,Poor,1.8,6.6,Cloudy,Good,Yes,6,Safe,3,Unsafe,30
+Kanniyakumari,Sunrise Point,8.0795,77.5548,Low,Low,Average,6.1,1.9,Rain,Average,No,1,Outside,7,Unsafe,50
+Tiruchirappalli,Samayapuram Temple,10.9305,78.736,Medium,Low,Good,7.0,8.2,Cloudy,Good,No,5,Outside,12,Unsafe,17
+Tiruchirappalli,Butterfly Park,10.8205,78.6905,Low,High,Good,1.6,9.0,Rain,Average,Yes,3,Outside,4,Unsafe,34
+Chennai,Guindy National Park,13.0108,80.2295,Low,Low,Poor,3.5,8.1,Cloudy,Poor,Yes,4,Safe,20,Unsafe,34
+Tiruchirappalli,Mukkombu,10.9065,78.6034,Low,Medium,Good,2.6,9.5,Clear,Poor,Yes,7,Safe,14,Unsafe,41
+Coimbatore,VOC Park,11.0032,76.9725,High,High,Poor,6.5,1.1,Cloudy,Average,No,7,Outside,9,Unsafe,0
+Namakkal,Kolli Hills,11.2485,78.3435,Low,Medium,Good,4.6,3.3,Rain,Average,Yes,2,Outside,11,Unsafe,41
+Madurai,Alagar Kovil,10.0203,78.1745,High,High,Average,5.3,8.6,Cloudy,Good,No,1,Outside,5,Unsafe,0
+Madurai,Alagar Kovil,10.0203,78.1745,Medium,High,Average,7.1,0.8,Fog,Poor,No,6,Safe,19,Unsafe,35
+Coimbatore,Kovai Kutralam,10.9414,76.7602,Low,Medium,Average,6.5,8.7,Clear,Good,Yes,8,Safe,7,Unsafe,21
+Karur,Pasupatheswarar Temple,10.9601,78.0766,High,Medium,Good,4.1,9.0,Rain,Good,No,2,Outside,3,Unsafe,8
+Chennai,Anna Nagar Tower Park,13.085,80.2101,High,Medium,Good,5.4,8.2,Clear,Poor,No,5,Safe,14,Unsafe,12
+Tiruchirappalli,Central Bus Stand,10.7905,78.6804,Low,Low,Average,6.3,8.7,Rain,Average,Yes,7,Safe,6,Unsafe,28
+Salem,Yercaud Lake,11.7753,78.2095,Medium,Medium,Average,6.5,2.2,Fog,Average,Yes,4,Outside,8,Unsafe,12
+Coimbatore,Brookefields Mall,11.0183,76.9725,Low,High,Average,2.8,3.6,Cloudy,Average,No,5,Outside,6,Unsafe,34
+Coimbatore,Perur Temple,10.976,76.9123,High,Low,Average,1.1,5.5,Cloudy,Poor,Yes,6,Outside,15,Unsafe,5
+Madurai,Vandiyur Mariamman Temple,9.9304,78.1502,Low,Low,Good,6.8,7.3,Rain,Poor,Yes,2,Outside,8,Unsafe,26
+Karur,Thanthonimalai,10.9607,78.0805,Low,High,Poor,3.3,4.5,Rain,Poor,No,4,Outside,3,Unsafe,26
+Karur,Amaravathi River,10.9654,78.0863,Low,High,Good,1.1,6.1,Rain,Average,No,1,Safe,14,Medium,70
+Nilgiris,Botanical Garden,11.4125,76.7115,High,Medium,Good,3.9,7.2,Fog,Average,No,3,Outside,18,Unsafe,6
+Salem,Kiliyur Falls,11.7793,78.214,Medium,High,Good,4.5,4.5,Rain,Poor,No,8,Safe,15,Unsafe,41
+Nilgiris,Avalanche Lake,11.302,76.633,Low,Low,Good,2.3,1.4,Fog,Average,No,8,Safe,12,Medium,74
+Salem,Mettur Dam,11.8005,77.8002,High,Medium,Poor,4.0,5.1,Fog,Good,Yes,0,Outside,13,Unsafe,0
+Nilgiris,Avalanche Lake,11.302,76.633,Medium,Low,Average,2.9,3.0,Clear,Poor,Yes,6,Safe,16,Unsafe,43
+Salem,Anna Park,11.7741,78.209,High,Low,Poor,2.8,8.2,Cloudy,Poor,No,7,Outside,19,Unsafe,0
+Karur,Thanthonimalai,10.9607,78.0805,Low,Low,Average,6.2,3.5,Rain,Average,Yes,5,Outside,17,Unsafe,22
+Salem,Pagoda Point,11.7835,78.2145,Medium,High,Poor,2.7,0.6,Clear,Average,Yes,8,Safe,18,Unsafe,19
+Salem,1008 Lingam Temple,11.6643,78.146,Low,Medium,Poor,1.8,4.6,Fog,Good,No,8,Outside,8,Unsafe,33
+Salem,Pagoda Point,11.7835,78.2145,High,Low,Poor,7.0,9.7,Clear,Average,Yes,1,Outside,8,Unsafe,0
+Salem,Anna Park,11.7741,78.209,High,Low,Poor,6.9,5.2,Rain,Average,Yes,1,Outside,16,Unsafe,0
+Namakkal,Namakkal Fort,11.2194,78.1676,High,High,Average,0.8,0.8,Rain,Good,No,5,Outside,14,Unsafe,17
+Tiruchirappalli,St Joseph Church,10.824,78.6901,Low,Low,Average,2.2,5.0,Cloudy,Average,No,4,Safe,19,Medium,66
+Salem,Anna Park,11.7741,78.209,Medium,Low,Poor,2.7,5.3,Fog,Poor,No,3,Outside,8,Unsafe,23
+Coimbatore,Brookefields Mall,11.0183,76.9725,Medium,Low,Good,4.3,4.1,Clear,Good,Yes,0,Outside,13,Unsafe,35
+Madurai,Alagar Kovil,10.0203,78.1745,High,Low,Good,7.4,4.8,Cloudy,Poor,No,1,Safe,10,Unsafe,35
+Tiruchirappalli,Mukkombu,10.9065,78.6034,Medium,High,Good,5.2,2.3,Rain,Good,Yes,2,Outside,18,Unsafe,19
+Karur,Amaravathi River,10.9654,78.0863,Medium,High,Average,4.6,6.3,Clear,Poor,Yes,3,Outside,19,Unsafe,1
+Karur,Karur Bus Stand,10.96,78.076,Medium,Low,Average,4.3,1.4,Rain,Average,Yes,7,Safe,6,Unsafe,41
+Kanniyakumari,Mathur Aqueduct,8.307,77.315,Low,Low,Average,3.0,9.3,Cloudy,Average,No,0,Safe,14,Medium,64
+Tiruchirappalli,St Joseph Church,10.824,78.6901,High,Medium,Average,5.0,3.7,Fog,Average,No,0,Safe,17,Unsafe,34
+Coimbatore,Marudhamalai Temple,11.0453,76.862,Low,High,Good,1.7,6.5,Clear,Poor,No,0,Safe,5,Medium,72
+Madurai,Meenakshi Temple,9.9195,78.1193,Medium,Low,Poor,2.7,3.8,Fog,Poor,Yes,5,Outside,11,Unsafe,7
+Thanjavur,Grand Anicut Canal,10.7911,79.1605,Low,Low,Average,5.0,0.9,Rain,Good,Yes,7,Outside,11,Unsafe,36
+Kanniyakumari,Vivekananda Rock,8.078,77.555,High,Medium,Average,3.0,9.6,Fog,Average,Yes,6,Safe,9,Unsafe,0
+Tiruchirappalli,Central Bus Stand,10.7905,78.6804,High,Low,Poor,4.3,2.2,Rain,Average,No,2,Safe,9,Unsafe,33
+Salem,1008 Lingam Temple,11.6643,78.146,Medium,High,Good,4.4,2.9,Fog,Average,No,8,Safe,14,Unsafe,49
+Chennai,Guindy National Park,13.0108,80.2295,High,High,Good,1.9,5.5,Cloudy,Average,Yes,1,Outside,13,Unsafe,13
+Nilgiris,Rose Garden,11.4152,76.7065,Medium,Medium,Good,1.2,2.0,Fog,Poor,Yes,2,Safe,10,Medium,64
+Chennai,Marina Beach,13.05,80.2824,Low,High,Poor,2.0,5.2,Fog,Good,No,5,Outside,7,Unsafe,34
+Salem,Sugavaneswarar Temple,11.6643,78.146,High,High,Poor,7.2,6.3,Rain,Average,No,0,Outside,13,Unsafe,0
+Namakkal,Kolli Hills,11.2485,78.3435,Medium,Medium,Poor,4.0,4.1,Cloudy,Average,Yes,1,Safe,12,Unsafe,30
+Madurai,Pazhamudhircholai,10.0321,78.1776,Medium,Low,Poor,6.1,5.8,Fog,Good,Yes,5,Outside,16,Unsafe,0
+Karur,Amaravathi River,10.9654,78.0863,Medium,Low,Poor,1.4,9.1,Rain,Good,Yes,5,Outside,11,Unsafe,7
+Tiruchirappalli,Butterfly Park,10.8205,78.6905,Low,Low,Poor,0.6,4.0,Cloudy,Poor,Yes,2,Safe,16,Unsafe,58
+Karur,Kalyana Venkataramana Temple,10.9595,78.0764,High,Low,Good,7.5,7.0,Clear,Average,No,8,Safe,12,Unsafe,11
+Karur,Pugalur,10.9301,78.036,Low,High,Poor,6.0,2.7,Fog,Good,No,3,Safe,15,Unsafe,46
+Karur,Pasupatheswarar Temple,10.9601,78.0766,High,High,Good,7.9,0.8,Clear,Good,No,1,Outside,18,Unsafe,13
+Coimbatore,Siruvani Falls,10.947,76.691,Low,High,Average,6.5,6.0,Cloudy,Poor,Yes,2,Outside,8,Unsafe,18
+Tiruchirappalli,St Joseph Church,10.824,78.6901,High,Medium,Average,1.4,2.0,Fog,Poor,No,3,Outside,12,Unsafe,26
+Chennai,VGP Golden Beach,12.9124,80.2517,High,Low,Poor,5.7,5.0,Fog,Good,Yes,6,Outside,15,Unsafe,0
+Chennai,Kapaleeshwar Temple,13.0339,80.269,Medium,High,Poor,5.9,1.7,Rain,Good,Yes,3,Outside,10,Unsafe,0
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,Low,Low,Average,4.1,0.6,Clear,Poor,No,5,Outside,14,Unsafe,52
+Madurai,Gandhi Museum,9.934,78.1306,Medium,Medium,Poor,2.9,3.7,Clear,Good,No,1,Outside,3,Unsafe,22
+Karur,Amaravathi River,10.9654,78.0863,Medium,High,Average,3.5,8.7,Rain,Good,Yes,2,Outside,14,Unsafe,3
+Tiruchirappalli,St Joseph Church,10.824,78.6901,High,Low,Good,7.3,5.2,Clear,Poor,No,4,Outside,14,Unsafe,9
+Coimbatore,VOC Park,11.0032,76.9725,Medium,Low,Poor,3.5,6.6,Cloudy,Average,No,5,Outside,10,Unsafe,9
+Salem,Anna Park,11.7741,78.209,Medium,Low,Average,4.6,4.9,Rain,Poor,No,0,Outside,19,Unsafe,39
+Karur,Kalyana Venkataramana Temple,10.9595,78.0764,High,Low,Average,6.5,0.8,Clear,Poor,No,7,Outside,16,Unsafe,3
+Coimbatore,Marudhamalai Temple,11.0453,76.862,High,High,Good,4.5,5.8,Fog,Poor,No,8,Outside,8,Unsafe,1
+Namakkal,Aagaya Gangai Falls,11.2735,78.3335,Low,High,Good,6.4,2.6,Fog,Average,Yes,8,Safe,9,Unsafe,42
+Thanjavur,Grand Anicut Canal,10.7911,79.1605,Medium,High,Poor,3.4,0.5,Fog,Good,No,4,Outside,9,Unsafe,19
+Madurai,Meenakshi Temple,9.9195,78.1193,Medium,High,Good,1.5,6.6,Clear,Good,No,4,Outside,7,Unsafe,29
+Karur,Karur Bus Stand,10.96,78.076,High,Low,Good,5.8,8.5,Rain,Good,Yes,7,Outside,3,Unsafe,0
+Coimbatore,Perur Temple,10.976,76.9123,Medium,High,Poor,4.4,7.4,Rain,Poor,No,7,Safe,13,Unsafe,15
+Salem,Mettur Dam,11.8005,77.8002,Medium,High,Poor,6.8,3.1,Clear,Good,Yes,5,Safe,11,Unsafe,7
+Madurai,Samanar Hills,9.8883,78.0675,Low,High,Average,0.6,9.9,Cloudy,Good,Yes,3,Safe,3,Unsafe,46
+Chennai,Government Museum,13.0722,80.264,Low,Low,Good,7.5,7.1,Fog,Good,Yes,7,Outside,13,Unsafe,16
+Nilgiris,Rose Garden,11.4152,76.7065,Low,Medium,Average,6.2,3.0,Fog,Good,Yes,6,Safe,7,Unsafe,43
+Karur,Textile Market,10.9584,78.0748,High,Low,Average,1.0,5.5,Rain,Poor,Yes,2,Outside,9,Unsafe,13
+Namakkal,Namakkal Fort,11.2194,78.1676,Low,High,Good,5.6,5.8,Clear,Poor,Yes,0,Outside,15,Unsafe,30
+Chennai,Guindy National Park,13.0108,80.2295,High,Low,Poor,5.7,2.6,Fog,Good,Yes,3,Safe,19,Unsafe,9
+Chennai,Elliot Beach,13.0003,80.2667,High,Medium,Poor,4.6,2.0,Fog,Good,No,3,Outside,11,Unsafe,6
+Coimbatore,Siruvani Falls,10.947,76.691,Low,Low,Good,2.1,7.5,Rain,Average,Yes,4,Outside,6,Unsafe,32
+Namakkal,Aagaya Gangai Falls,11.2735,78.3335,High,Medium,Poor,4.5,9.2,Cloudy,Poor,No,2,Safe,15,Unsafe,10
+Kanniyakumari,Kanyakumari Beach,8.079,77.5545,High,Low,Good,4.8,4.7,Clear,Average,Yes,2,Safe,11,Unsafe,31
+Kanniyakumari,Sunset Point,8.0756,77.549,Medium,High,Average,1.2,4.0,Rain,Good,Yes,6,Safe,7,Unsafe,35
+Kanniyakumari,Mathur Aqueduct,8.307,77.315,Low,Medium,Good,6.2,1.9,Fog,Poor,No,2,Safe,4,Medium,71
+Namakkal,Namakkal Fort,11.2194,78.1676,Low,High,Poor,3.7,1.3,Fog,Poor,No,6,Safe,6,Unsafe,50
+Salem,Yercaud Lake,11.7753,78.2095,Medium,Medium,Poor,2.6,2.3,Cloudy,Average,Yes,1,Safe,12,Unsafe,38
+Salem,Kiliyur Falls,11.7793,78.214,High,Medium,Poor,1.5,8.6,Cloudy,Poor,No,6,Safe,13,Unsafe,12
+Salem,Kurumbapatti Zoo,11.687,78.1502,Medium,Low,Poor,1.7,8.1,Clear,Poor,Yes,2,Outside,6,Unsafe,13
+Salem,1008 Lingam Temple,11.6643,78.146,Low,Low,Poor,2.1,0.5,Clear,Average,Yes,6,Outside,5,Unsafe,28
+Karur,Textile Market,10.9584,78.0748,Low,Low,Average,1.0,9.3,Clear,Poor,No,2,Safe,8,Medium,70
+Thanjavur,Thanjavur Palace,10.7825,79.1322,Low,Low,Poor,2.2,1.4,Rain,Average,Yes,5,Outside,9,Unsafe,30
+Namakkal,Anjaneyar Temple,11.219,78.1675,Medium,Low,Poor,2.7,5.4,Fog,Average,Yes,2,Outside,9,Unsafe,13
+Karur,Kalyana Venkataramana Temple,10.9595,78.0764,Medium,High,Poor,3.1,5.1,Cloudy,Poor,Yes,7,Safe,5,Unsafe,13
+Thanjavur,Grand Anicut Canal,10.7911,79.1605,Medium,Low,Average,6.5,8.8,Rain,Average,Yes,8,Outside,10,Unsafe,0
+Nilgiris,Pykara Falls,11.4702,76.6045,High,Low,Average,5.9,7.0,Rain,Poor,Yes,3,Outside,11,Unsafe,0
+Karur,Kalyana Venkataramana Temple,10.9595,78.0764,High,Low,Average,7.3,3.0,Clear,Average,Yes,1,Outside,16,Unsafe,3
+Coimbatore,Perur Temple,10.976,76.9123,High,Medium,Good,5.2,3.3,Rain,Poor,No,0,Outside,3,Unsafe,12
+Madurai,Gandhi Museum,9.934,78.1306,Medium,Low,Poor,5.6,1.2,Cloudy,Average,No,5,Outside,18,Unsafe,17
+Madurai,Gandhi Museum,9.934,78.1306,Low,Medium,Poor,5.0,5.4,Cloudy,Good,No,2,Safe,15,Unsafe,55
+Nilgiris,Botanical Garden,11.4125,76.7115,High,Low,Poor,4.1,4.4,Fog,Poor,No,2,Outside,9,Unsafe,5
+Thanjavur,Sivaganga Park,10.7823,79.1335,Medium,Medium,Good,7.7,1.0,Clear,Poor,No,0,Outside,14,Unsafe,40
+Namakkal,Anjaneyar Temple,11.219,78.1675,High,Low,Average,6.9,8.2,Rain,Average,Yes,1,Outside,14,Unsafe,0
+Salem,Yercaud Lake,11.7753,78.2095,Medium,Low,Average,7.7,5.9,Cloudy,Good,Yes,7,Safe,20,Unsafe,23
+Tiruchirappalli,Mukkombu,10.9065,78.6034,Low,High,Poor,6.9,1.6,Rain,Good,No,1,Safe,10,Unsafe,50
+Karur,Kalyana Venkataramana Temple,10.9595,78.0764,Low,High,Poor,7.5,1.2,Clear,Good,Yes,1,Outside,5,Unsafe,18
+Madurai,Pazhamudhircholai,10.0321,78.1776,High,Medium,Poor,2.2,7.1,Fog,Poor,Yes,2,Outside,11,Unsafe,0
+Kanniyakumari,Padmanabhapuram Palace,8.2505,77.3255,High,High,Average,2.6,1.4,Clear,Poor,Yes,0,Safe,15,Unsafe,25
+Karur,Textile Market,10.9584,78.0748,Medium,High,Average,6.7,3.0,Clear,Poor,No,1,Outside,7,Unsafe,25
+Kanniyakumari,Mathur Aqueduct,8.307,77.315,Medium,High,Good,3.4,6.5,Cloudy,Good,Yes,1,Outside,9,Unsafe,13
+Nilgiris,Avalanche Lake,11.302,76.633,Low,Low,Average,3.5,5.8,Rain,Average,Yes,1,Safe,17,Medium,60
+Karur,Amaravathi River,10.9654,78.0863,High,Medium,Good,3.8,1.6,Fog,Average,Yes,6,Outside,18,Unsafe,6
+Nilgiris,Ooty Lake,11.4064,76.6932,Low,Medium,Good,6.5,0.8,Clear,Good,No,0,Outside,5,Unsafe,55
+Tiruchirappalli,Rock Fort,10.8316,78.6936,Low,Low,Average,7.0,4.8,Clear,Average,No,2,Safe,13,Medium,60
+Karur,Nerur Temple,10.9032,78.0625,Medium,High,Average,4.4,6.7,Clear,Good,Yes,3,Safe,15,Unsafe,21
+Thanjavur,Brihadeeswarar Temple,10.7828,79.1318,High,High,Average,2.3,3.9,Rain,Poor,No,7,Safe,4,Unsafe,15
+Namakkal,Kolli Hills,11.2485,78.3435,High,Low,Average,4.3,8.0,Clear,Average,No,7,Safe,4,Unsafe,15
+Madurai,Gandhi Museum,9.934,78.1306,High,High,Poor,2.7,6.4,Clear,Poor,No,3,Outside,14,Unsafe,0
+Tiruchirappalli,Srirangam Temple,10.8625,78.6932,Medium,High,Average,1.2,2.7,Clear,Average,Yes,5,Outside,10,Unsafe,25
+Tiruchirappalli,Mukkombu,10.9065,78.6034,High,Medium,Good,3.5,3.5,Clear,Average,No,7,Safe,14,Unsafe,28
+Namakkal,Paramathi Velur,11.1098,78.0031,High,Low,Good,2.8,4.4,Rain,Poor,No,4,Outside,17,Unsafe,19
+Salem,Anna Park,11.7741,78.209,Low,High,Average,1.3,3.0,Clear,Good,No,8,Safe,13,Medium,66
+Tiruchirappalli,Kallanai Dam,10.8525,78.913,Low,Low,Average,3.7,3.1,Fog,Good,Yes,4,Safe,12,Unsafe,54
+Chennai,VGP Golden Beach,12.9124,80.2517,High,Low,Average,7.5,9.8,Rain,Good,No,6,Safe,17,Unsafe,7
+Nilgiris,Tea Museum,11.4122,76.7055,Low,Medium,Good,1.5,2.1,Cloudy,Poor,No,7,Outside,11,Medium,61
+Coimbatore,Isha Yoga Center,10.9862,76.7356,Medium,High,Good,3.8,3.2,Fog,Average,No,7,Safe,4,Unsafe,43
+Tiruchirappalli,Butterfly Park,10.8205,78.6905,Low,Low,Good,4.5,1.8,Clear,Poor,Yes,2,Safe,13,Medium,74
+Coimbatore,Black Thunder,11.3122,76.9415,Medium,High,Poor,0.9,7.6,Rain,Good,No,0,Safe,9,Unsafe,39
+Madurai,Meenakshi Temple,9.9195,78.1193,Medium,Low,Poor,4.3,2.5,Cloudy,Good,Yes,6,Outside,12,Unsafe,13
+Nilgiris,Ooty Lake,11.4064,76.6932,Low,High,Poor,5.6,3.4,Clear,Good,No,8,Outside,7,Unsafe,8
+Karur,Amaravathi River,10.9654,78.0863,Low,High,Good,2.5,3.5,Rain,Good,Yes,1,Safe,13,Unsafe,58
+Kanniyakumari,Thiruvalluvar Statue,8.0785,77.5546,High,Low,Good,3.4,3.8,Cloudy,Poor,No,1,Safe,14,Unsafe,45
+Madurai,Alagar Kovil,10.0203,78.1745,High,Medium,Good,1.9,5.1,Clear,Poor,No,0,Safe,8,Unsafe,52
+Kanniyakumari,Kanyakumari Beach,8.079,77.5545,Medium,Low,Average,5.5,4.5,Rain,Good,No,7,Outside,8,Unsafe,15
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,Medium,Low,Average,1.1,7.5,Fog,Good,No,8,Safe,7,Unsafe,43
+Thanjavur,Sivaganga Park,10.7823,79.1335,Medium,High,Average,6.4,6.0,Clear,Good,No,7,Safe,11,Unsafe,25
+Thanjavur,Sivaganga Park,10.7823,79.1335,Medium,Low,Good,5.6,2.4,Rain,Good,Yes,4,Safe,13,Unsafe,45
+Thanjavur,Royal Museum,10.7829,79.1315,Medium,High,Poor,7.2,5.4,Rain,Good,No,8,Outside,18,Unsafe,0
+Coimbatore,Black Thunder,11.3122,76.9415,High,High,Average,7.5,4.1,Cloudy,Poor,No,2,Safe,19,Unsafe,15
+Coimbatore,VOC Park,11.0032,76.9725,High,High,Poor,7.4,9.2,Rain,Good,No,0,Outside,6,Unsafe,0
+Coimbatore,Black Thunder,11.3122,76.9415,Low,Low,Average,7.9,5.6,Clear,Average,Yes,4,Safe,10,Unsafe,44
+Madurai,Thirumalai Nayakkar Mahal,9.916,78.1213,High,High,Good,1.1,3.3,Rain,Poor,Yes,1,Safe,4,Unsafe,33
+Madurai,Samanar Hills,9.8883,78.0675,Medium,High,Average,6.7,5.8,Fog,Average,Yes,2,Safe,6,Unsafe,23
+Thanjavur,Punnainallur Temple,10.8293,79.1744,Low,High,Poor,6.4,8.3,Fog,Good,No,0,Safe,8,Unsafe,34
+Chennai,Government Museum,13.0722,80.264,Medium,Low,Average,3.1,1.8,Fog,Average,Yes,5,Outside,3,Unsafe,25
+Kanniyakumari,Kanyakumari Beach,8.079,77.5545,Medium,High,Good,8.0,3.1,Clear,Average,No,2,Safe,17,Unsafe,43
+Madurai,Samanar Hills,9.8883,78.0675,Medium,Low,Poor,1.3,8.6,Rain,Poor,Yes,1,Safe,18,Unsafe,35
+Salem,Yercaud Lake,11.7753,78.2095,Medium,Low,Poor,1.0,7.6,Cloudy,Poor,Yes,6,Outside,9,Unsafe,5
+Namakkal,Mohanur River,11.0605,78.14,Medium,High,Poor,1.6,9.8,Clear,Poor,No,8,Outside,12,Unsafe,3
+Madurai,Alagar Kovil,10.0203,78.1745,Medium,Low,Poor,5.9,4.4,Rain,Average,Yes,1,Outside,16,Unsafe,5
+Salem,Yercaud Lake,11.7753,78.2095,Low,Medium,Poor,7.2,9.9,Fog,Average,Yes,6,Safe,13,Unsafe,15

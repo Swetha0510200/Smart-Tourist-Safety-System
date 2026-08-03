@@ -548,7 +548,7 @@ AI Risk Analysis
 
 
 <td>
-{% if "Inside" in geo_status %}
+{% if "Safe" in geo_status %}
 <span class="badge green">Protected</span>
 {% else %}
 <span class="badge red">Outside Safe Zone</span>
@@ -832,6 +832,17 @@ Recent AI Alerts
 
 </div>
 
+<div class="card">
+
+    <h3><h3>AI Risk Distribution</h3></h3>
+
+    <div style="height:220px;">
+        <canvas id="riskPieChart"></canvas>
+    </div>
+
+</div>
+
+
 <div class="timeline-item">
 
 <div class="dot"></div>
@@ -937,6 +948,96 @@ setInterval(function(){
     location.reload();
 
 },60000);
+
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+const safetyScore = Number("{{ score }}") || 0;
+
+// Risk is automatically calculated
+const riskScore = 100 - safetyScore;
+
+// Dynamic color based on safety score
+let riskColor = "#22c55e";
+
+if (safetyScore >= 80) {
+    riskColor = "#22c55e";     // Green
+}
+else if (safetyScore >= 60) {
+    riskColor = "#f59e0b";     // Orange
+}
+else if (safetyScore >= 40) {
+    riskColor = "#ef4444";     // Red
+}
+else {
+    riskColor = "#7f1d1d";     // Dark Red
+}
+
+new Chart(document.getElementById("riskPieChart"), {
+
+    type: "doughnut",
+
+    data: {
+
+        labels: ["Safe", "Risk"],
+
+        datasets: [{
+
+            data: [safetyScore, riskScore],
+
+            backgroundColor: [
+
+                "#60a5fa",     // Safe (Blue)
+
+                riskColor      // Risk (Dynamic)
+
+            ],
+
+            borderWidth: 0
+
+        }]
+
+    },
+
+    options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        cutout: "65%",
+
+        plugins: {
+
+            legend: {
+
+                position: "bottom"
+
+            },
+
+            tooltip: {
+
+                callbacks: {
+
+                    label: function(context) {
+
+                        return context.label + " : " + context.raw + "%";
+
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+});
 
 </script>
 
