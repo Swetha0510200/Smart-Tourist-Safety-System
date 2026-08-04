@@ -8,6 +8,12 @@ The system helps tourists manage their safety information, monitor their current
 
 ---
 
+## 🌐 Live Demo
+
+**Live Application:**  
+https://smart-tourist-safety-system-vmax.onrender.com
+
+
 ## 🎯 Objectives
 
 - Improve tourist safety using intelligent monitoring.
